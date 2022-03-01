@@ -1,0 +1,26 @@
+{
+  "name": "luv-nft-realasset",
+  "version": "1.0.0",
+  "description": "real asset project on harmony blockchain",
+  "main": "index.js",
+  "dependencies": {
+    "@harmony-js/core": "^0.1.55",
+    "@openzeppelin/contracts": "^3.2.0",
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "base64-sol": "^1.0.1",
+    "bn.js": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^3.2.0",
+    "solc": "0.6.12",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "tslib": "^2.0.3",
+    "web3": "^1.3.0",
+    "yargs": "^16.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {},
+  "author": "Jay Lin & Hahz Terry",
+  "license": "ISC"
+}
