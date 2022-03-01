@@ -1,4 +1,5 @@
 pragma solidity ^0.7.6;
+pragma experimental ABIEncoderV2;
 
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
@@ -952,4 +953,15 @@ contract NFTAuction {
       ║       UPDATE AUCTION         ║
       ╚══════════════════════════════╝*/
     /**********************************/
+
+    /*╔══════════════════════════════╗
+      ║           Get Info           ║
+      ╚══════════════════════════════╝*/
+      function getAuctionInfo(uint256 tokenId)
+        public
+        view
+        returns (Auction memory)
+    {
+        return nftContractAuctions[tokenId];
+    }
 }
