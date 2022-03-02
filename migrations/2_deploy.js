@@ -10,6 +10,6 @@ module.exports = async function (deployer, network, accounts) {
   await deployer.deploy(
     Auction,
     LuvNFT.address,
-    0xfed7ade2bf5d99934e0f5a991f1ea3d89a444885
+    "0xfed7ade2bf5d99934e0f5a991f1ea3d89a444885"
   );
 };
