@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: UNLICENSED
+
 pragma solidity ^0.7.6;
 pragma experimental ABIEncoderV2;
 
@@ -5,9 +7,12 @@ import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
+import "./lib/GenerativeNFT.sol";
+
 contract NFTAuction {
     mapping(uint256 => Auction) public nftContractAuctions;
     mapping(address => uint256) failedTransferCredits; //return the money to bidders
+    mapping(uint256 => uint256) public tokenIdToPrice;
 
     struct Auction {
         //map token ID to
@@ -83,6 +88,10 @@ contract NFTAuction {
     event BidWithdrawn(uint256 tokenId, address highestBidder);
 
     event HighestBidTaken(uint256 tokenId);
+
+    event NftPriceChanged(uint256 tokenId, uint256 price);
+
+    event NftBought(address _seller, address _buyer, uint256 _price);
 
     /**********************************/
     /*╔═════════════════════════════╗
@@ -957,11 +966,61 @@ contract NFTAuction {
     /*╔══════════════════════════════╗
       ║           Get Info           ║
       ╚══════════════════════════════╝*/
-      function getAuctionInfo(uint256 tokenId)
+    function getAuctionInfo(uint256 _tokenId)
         public
         view
         returns (Auction memory)
     {
-        return nftContractAuctions[tokenId];
+        return nftContractAuctions[_tokenId];
     }
+
+    /*╔══════════════════════════════╗
+      ║       create svg file        ║
+      ╚══════════════════════════════╝*/
+    //create svg file automatically.
+    function getSVG(
+        uint256 _tokenId,
+        string memory latitude,
+        string memory longitude,
+        string memory name
+    ) public view returns (string memory) {
+        return
+            NFTDescriptor.constructTokenURI(
+                NFTDescriptor.URIParams({
+                    tokenId: _tokenId,
+                    blockNumber: block.number,
+                    latitude: latitude,
+                    longitude: longitude,
+                    name: name
+                })
+            );
+    }
+
+    // //get the price of NFT
+    // function getPriceOf(uint256 _tokenId) public view returns (uint256) {
+    //     return tokenIdToPrice[_tokenId];
+    // }
+
+    // //set the price of NFT:only owner can set this.
+    // function setPriceOf(uint256 _tokenId, uint256 price) public {
+    //     require(
+    //         IERC721(_nftContractAddress).ownerOf(_tokenId) == msg.sender,
+    //         "Only owner of NFT can set price"
+    //     );
+    //     tokenIdToPrice[_tokenId] = price;
+    //     emit NftPriceChanged(_tokenId, price);
+    // }
+
+    // function buy(uint256 _tokenId) external payable {
+    //     require(msg.sender != address(0));
+    //     require(!_auctions[_tokenId].isExist, "Auction is going on");
+    //     uint256 price = tokenIdToPrice[_tokenId];
+    //     require(price > 0, "This token is not for sale");
+    //     require(msg.value == price, "Incorrect value");
+    //     address seller = ownerOf(_tokenId);
+    //     _transfer(seller, msg.sender, _tokenId);
+    //     tokenIdToPrice[_tokenId] = 0;
+    //     payable(seller).transfer(msg.value);
+    //     emit NftBought(seller, msg.sender, msg.value);
+    // }
 }
