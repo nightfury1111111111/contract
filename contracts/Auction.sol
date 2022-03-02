@@ -12,7 +12,21 @@ import "./lib/GenerativeNFT.sol";
 contract NFTAuction {
     mapping(uint256 => Auction) public nftContractAuctions;
     mapping(address => uint256) failedTransferCredits; //return the money to bidders
-    mapping(uint256 => uint256) public tokenIdToPrice;
+    // mapping(uint256 => uint256) public tokenIdToPrice;
+    // mapping(uint256 => bool) public isRent;
+    mapping(uint256 => Rent) public rentNfts;
+
+    struct Rent {
+        address lender;
+        address borrower;
+        uint32 period;
+        uint128 price;
+        uint128 collateral;
+        uint128 extraPay; //is used when the borrower didn't return NFT at definite time.
+        uint64 rentEnd;
+        // address[] feeRecipients;
+        // uint32[] feePercentages;
+    }
 
     struct Auction {
         //map token ID to
@@ -32,11 +46,14 @@ contract NFTAuction {
 
     //Default values that are used if not specified by the NFT seller.
     uint32 public defaultBidIncreasePercentage;
-    uint32 public minimumSettableIncreasePercentage;
+    // uint32 public minimumSettableIncreasePercentage;
     uint32 public defaultAuctionBidPeriod;
 
     //NFT token contract address
     address public _nftContractAddress;
+
+    uint32 public managerFee;
+    address manager;
 
     /*╔═════════════════════════════╗
       ║           EVENTS            ║
@@ -68,7 +85,6 @@ contract NFTAuction {
         address nftSeller,
         address erc20Token,
         uint128 buyNowPrice,
-        address whitelistedBuyer,
         address[] feeRecipients,
         uint32[] feePercentages
     );
@@ -91,7 +107,13 @@ contract NFTAuction {
 
     event NftPriceChanged(uint256 tokenId, uint256 price);
 
-    event NftBought(address _seller, address _buyer, uint256 _price);
+    event NftBorrow(address _seller, address _buyer, uint256 _price);
+
+    event NftToLend(address lender, uint256 tokenId, uint32 period, uint128 price, uint128 _extraPay, uint128 _collateral);
+
+    event ReturnNftToLender(address lender, address borrower, uint256 _tokenId);
+
+    event FeeSet(uint32 fee);
 
     /**********************************/
     /*╔═════════════════════════════╗
@@ -117,6 +139,11 @@ contract NFTAuction {
 
             _resetAuction(_tokenId);
         }
+        _;
+    }
+
+    modifier isRentNotStartedByOwner(uint256 _tokenId) {
+        require(rentNfts[_tokenId].lender==address(0),"During rent you can't auction");
         _;
     }
 
@@ -217,11 +244,13 @@ contract NFTAuction {
     }
 
     // constructor
-    constructor(address nftContractAddress) {
+    constructor(address nftContractAddress, address _manager) {
         defaultBidIncreasePercentage = 100;
         defaultAuctionBidPeriod = 86400; //1 day
-        minimumSettableIncreasePercentage = 100;
+        // minimumSettableIncreasePercentage = 100;
         _nftContractAddress = nftContractAddress;
+        manager=_manager;
+        managerFee=11;
     }
 
     /*╔══════════════════════════════╗
@@ -524,6 +553,7 @@ contract NFTAuction {
         external
         isAuctionNotStartedByOwner(_tokenId)
         priceGreaterThanZero(_minPrice)
+        isRentNotStartedByOwner(_tokenId)
     {
         nftContractAuctions[_tokenId].auctionBidPeriod = _auctionBidPeriod;
         nftContractAuctions[_tokenId]
@@ -559,7 +589,6 @@ contract NFTAuction {
         uint256 _tokenId,
         address _erc20Token,
         uint128 _buyNowPrice,
-        address _whitelistedBuyer,
         address[] memory _feeRecipients,
         uint32[] memory _feePercentages
     )
@@ -583,20 +612,19 @@ contract NFTAuction {
         uint256 _tokenId,
         address _erc20Token,
         uint128 _buyNowPrice,
-        address _whitelistedBuyer,
         address[] memory _feeRecipients,
         uint32[] memory _feePercentages
     )
         external
         isAuctionNotStartedByOwner(_tokenId)
         priceGreaterThanZero(_buyNowPrice)
+        isRentNotStartedByOwner(_tokenId)
     {
         //min price = 0
         _setupSale(
             _tokenId,
             _erc20Token,
             _buyNowPrice,
-            _whitelistedBuyer,
             _feeRecipients,
             _feePercentages
         );
@@ -606,7 +634,6 @@ contract NFTAuction {
             msg.sender,
             _erc20Token,
             _buyNowPrice,
-            _whitelistedBuyer,
             _feeRecipients,
             _feePercentages
         );
@@ -996,31 +1023,81 @@ contract NFTAuction {
             );
     }
 
-    // //get the price of NFT
-    // function getPriceOf(uint256 _tokenId) public view returns (uint256) {
-    //     return tokenIdToPrice[_tokenId];
-    // }
+    /*╔══════════════════════════════╗
+      ║          create rent         ║
+      ╚══════════════════════════════╝*/
 
-    // //set the price of NFT:only owner can set this.
-    // function setPriceOf(uint256 _tokenId, uint256 price) public {
-    //     require(
-    //         IERC721(_nftContractAddress).ownerOf(_tokenId) == msg.sender,
-    //         "Only owner of NFT can set price"
-    //     );
-    //     tokenIdToPrice[_tokenId] = price;
-    //     emit NftPriceChanged(_tokenId, price);
-    // }
+    //users can't borrow NFT during auction
+    function lend(
+        uint256 _tokenId,
+        uint32 _period,
+        uint128 _collateral,
+        uint128 _price,
+        uint128 _extraPay
+        // address[] memory _feeRecipients,
+        // uint32[] memory _feePercentages
+    )
+        external
+        isAuctionNotStartedByOwner(_tokenId)
+        priceGreaterThanZero(_price)
+    {
+        require(IERC721(_nftContractAddress).ownerOf(_tokenId)==msg.sender,"Only owner can lend this NFT");
+        rentNfts[_tokenId].lender=msg.sender;
+        rentNfts[_tokenId].period=_period;
+        rentNfts[_tokenId].collateral=_collateral;//get extrapay from this
+        rentNfts[_tokenId].price=_price;
+        rentNfts[_tokenId].extraPay=_extraPay;
+        // rentNfts[_tokenId].feeRecipients=_feeRecipients;
+        // rentNfts[_tokenId].feePercentages=_feePercentages;
+        emit NftToLend(msg.sender, _tokenId, _period, _price, _extraPay, _collateral);
+    }
 
-    // function buy(uint256 _tokenId) external payable {
-    //     require(msg.sender != address(0));
-    //     require(!_auctions[_tokenId].isExist, "Auction is going on");
-    //     uint256 price = tokenIdToPrice[_tokenId];
-    //     require(price > 0, "This token is not for sale");
-    //     require(msg.value == price, "Incorrect value");
-    //     address seller = ownerOf(_tokenId);
-    //     _transfer(seller, msg.sender, _tokenId);
-    //     tokenIdToPrice[_tokenId] = 0;
-    //     payable(seller).transfer(msg.value);
-    //     emit NftBought(seller, msg.sender, msg.value);
-    // }
+    //users pay price + collateral(not implemented now)
+    function borrow(uint256 _tokenId) external payable {
+        require(msg.sender != address(0));
+        uint128 price = rentNfts[_tokenId].price;
+        require(price > 0, "Not for rent");
+        uint128 collateral = rentNfts[_tokenId].collateral;
+        require(msg.value == price, "Incorrect value");
+        // require(msg.value == (price+collateral), "Incorrect value");
+        address lender = rentNfts[_tokenId].lender;
+        IERC721(_nftContractAddress).transferFrom(lender, msg.sender, _tokenId);
+        rentNfts[_tokenId].price = 0;
+        rentNfts[_tokenId].borrower=msg.sender;
+        uint32 period=rentNfts[_tokenId].period;
+        rentNfts[_tokenId].rentEnd=period+uint64(block.timestamp);
+        payable(lender).transfer(msg.value);
+        emit NftBorrow(lender, msg.sender, msg.value);
+        IERC721(_nftContractAddress).approve(lender, _tokenId);//make lender can return NFT.
+    }
+
+    //users get collateral - extrapay * delaytime
+    function returnNft(uint256 _tokenId) public {
+        require(block.timestamp>rentNfts[_tokenId].rentEnd,"Rent is not ended");
+        require(rentNfts[_tokenId].borrower==msg.sender||rentNfts[_tokenId].lender==msg.sender,"You are not a borrower or lender");
+        address lender = rentNfts[_tokenId].lender;
+        address borrower = rentNfts[_tokenId].borrower;
+        IERC721(_nftContractAddress).transferFrom(borrower, lender,  _tokenId);
+        emit ReturnNftToLender(lender, borrower, _tokenId);
+        _resetRent(_tokenId);
+    }
+
+    function _resetRent(uint256 _tokenId) internal {
+        rentNfts[_tokenId].lender = address(0);
+        rentNfts[_tokenId].borrower = address(0);
+        rentNfts[_tokenId].period = 0;
+        rentNfts[_tokenId].price = 0;
+        rentNfts[_tokenId].extraPay = 0;
+        rentNfts[_tokenId].rentEnd = 0;
+    }
+
+    /*╔══════════════════════════════╗
+      ║        set managerfee        ║
+      ╚══════════════════════════════╝*/
+
+    function setManagerFee(uint32 fee) public {
+        require(msg.sender==manager,"Not a manager");
+        managerFee=fee;
+        emit FeeSet(fee);
+    }
 }
