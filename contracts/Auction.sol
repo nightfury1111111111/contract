@@ -52,8 +52,8 @@ contract NFTAuction {
     //NFT token contract address
     address public _nftContractAddress;
 
-    uint32 public managerFee;
-    address manager;
+    uint32 public managerFee;//shown by 10000 not 100
+    address public manager;
 
     /*╔═════════════════════════════╗
       ║           EVENTS            ║
@@ -109,7 +109,14 @@ contract NFTAuction {
 
     event NftBorrow(address _seller, address _buyer, uint256 _price);
 
-    event NftToLend(address lender, uint256 tokenId, uint32 period, uint128 price, uint128 _extraPay, uint128 _collateral);
+    event NftToLend(
+        address lender,
+        uint256 tokenId,
+        uint32 period,
+        uint128 price,
+        uint128 _extraPay,
+        uint128 _collateral
+    );
 
     event ReturnNftToLender(address lender, address borrower, uint256 _tokenId);
 
@@ -143,12 +150,26 @@ contract NFTAuction {
     }
 
     modifier isRentNotStartedByOwner(uint256 _tokenId) {
-        require(rentNfts[_tokenId].lender==address(0),"During rent you can't auction");
+        require(
+            rentNfts[_tokenId].lender == address(0),
+            "During rent you can't auction"
+        );
         _;
     }
 
     modifier auctionOngoing(uint256 _tokenId) {
         require(_isAuctionOngoing(_tokenId), "Auction has ended");
+        _;
+    }
+
+    modifier isFeeToManagerMeet(
+        address[] memory _feeRecipients,
+        uint32[] memory _feePercentages
+    ) {
+        require(
+            _feeRecipients[0] == manager && _feePercentages[0] == managerFee,
+            "Must pay correct fee to manager"
+        );
         _;
     }
 
@@ -249,8 +270,8 @@ contract NFTAuction {
         defaultAuctionBidPeriod = 86400; //1 day
         // minimumSettableIncreasePercentage = 100;
         _nftContractAddress = nftContractAddress;
-        manager=_manager;
-        managerFee=11;
+        manager = _manager;
+        managerFee = 1100;
     }
 
     /*╔══════════════════════════════╗
@@ -497,6 +518,7 @@ contract NFTAuction {
             _feeRecipients.length,
             _feePercentages.length
         )
+        isFeeToManagerMeet(_feeRecipients, _feePercentages)
         isFeePercentagesLessThanMaximum(_feePercentages)
     {
         if (_erc20Token != address(0)) {
@@ -597,6 +619,7 @@ contract NFTAuction {
             _feeRecipients.length,
             _feePercentages.length
         )
+        isFeeToManagerMeet(_feeRecipients, _feePercentages)
         isFeePercentagesLessThanMaximum(_feePercentages)
     {
         if (_erc20Token != address(0)) {
@@ -1034,22 +1057,32 @@ contract NFTAuction {
         uint128 _collateral,
         uint128 _price,
         uint128 _extraPay
-        // address[] memory _feeRecipients,
-        // uint32[] memory _feePercentages
     )
         external
+        // address[] memory _feeRecipients,
+        // uint32[] memory _feePercentages
         isAuctionNotStartedByOwner(_tokenId)
         priceGreaterThanZero(_price)
     {
-        require(IERC721(_nftContractAddress).ownerOf(_tokenId)==msg.sender,"Only owner can lend this NFT");
-        rentNfts[_tokenId].lender=msg.sender;
-        rentNfts[_tokenId].period=_period;
-        rentNfts[_tokenId].collateral=_collateral;//get extrapay from this
-        rentNfts[_tokenId].price=_price;
-        rentNfts[_tokenId].extraPay=_extraPay;
+        require(
+            IERC721(_nftContractAddress).ownerOf(_tokenId) == msg.sender,
+            "Only owner can lend this NFT"
+        );
+        rentNfts[_tokenId].lender = msg.sender;
+        rentNfts[_tokenId].period = _period;
+        rentNfts[_tokenId].collateral = _collateral; //get extrapay from this
+        rentNfts[_tokenId].price = _price;
+        rentNfts[_tokenId].extraPay = _extraPay;
         // rentNfts[_tokenId].feeRecipients=_feeRecipients;
         // rentNfts[_tokenId].feePercentages=_feePercentages;
-        emit NftToLend(msg.sender, _tokenId, _period, _price, _extraPay, _collateral);
+        emit NftToLend(
+            msg.sender,
+            _tokenId,
+            _period,
+            _price,
+            _extraPay,
+            _collateral
+        );
     }
 
     //users pay price + collateral(not implemented now)
@@ -1063,21 +1096,28 @@ contract NFTAuction {
         address lender = rentNfts[_tokenId].lender;
         IERC721(_nftContractAddress).transferFrom(lender, msg.sender, _tokenId);
         rentNfts[_tokenId].price = 0;
-        rentNfts[_tokenId].borrower=msg.sender;
-        uint32 period=rentNfts[_tokenId].period;
-        rentNfts[_tokenId].rentEnd=period+uint64(block.timestamp);
+        rentNfts[_tokenId].borrower = msg.sender;
+        uint32 period = rentNfts[_tokenId].period;
+        rentNfts[_tokenId].rentEnd = period + uint64(block.timestamp);
         payable(lender).transfer(msg.value);
         emit NftBorrow(lender, msg.sender, msg.value);
-        IERC721(_nftContractAddress).approve(lender, _tokenId);//make lender can return NFT.
+        IERC721(_nftContractAddress).approve(lender, _tokenId); //make lender can return NFT.
     }
 
     //users get collateral - extrapay * delaytime
     function returnNft(uint256 _tokenId) public {
-        require(block.timestamp>rentNfts[_tokenId].rentEnd,"Rent is not ended");
-        require(rentNfts[_tokenId].borrower==msg.sender||rentNfts[_tokenId].lender==msg.sender,"You are not a borrower or lender");
+        require(
+            block.timestamp > rentNfts[_tokenId].rentEnd,
+            "Rent is not ended"
+        );
+        require(
+            rentNfts[_tokenId].borrower == msg.sender ||
+                rentNfts[_tokenId].lender == msg.sender,
+            "You are not a borrower or lender"
+        );
         address lender = rentNfts[_tokenId].lender;
         address borrower = rentNfts[_tokenId].borrower;
-        IERC721(_nftContractAddress).transferFrom(borrower, lender,  _tokenId);
+        IERC721(_nftContractAddress).transferFrom(borrower, lender, _tokenId);
         emit ReturnNftToLender(lender, borrower, _tokenId);
         _resetRent(_tokenId);
     }
@@ -1096,8 +1136,8 @@ contract NFTAuction {
       ╚══════════════════════════════╝*/
 
     function setManagerFee(uint32 fee) public {
-        require(msg.sender==manager,"Not a manager");
-        managerFee=fee;
+        require(msg.sender == manager, "Not a manager");
+        managerFee = fee;
         emit FeeSet(fee);
     }
 }

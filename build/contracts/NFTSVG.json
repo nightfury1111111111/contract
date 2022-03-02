@@ -18,10 +18,10 @@
         3499
       ],
       "HexStrings": [
-        7829
+        7862
       ],
       "NFTSVG": [
-        8039
+        8072
       ],
       "SafeMath": [
         533
@@ -33,12 +33,12 @@
         3384
       ]
     },
-    "id": 8040,
+    "id": 8073,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7831,
+        "id": 7864,
         "literals": [
           "solidity",
           "^",
@@ -49,7 +49,7 @@
         "src": "87:23:24"
       },
       {
-        "id": 7832,
+        "id": 7865,
         "literals": [
           "abicoder",
           "v2"
@@ -60,9 +60,9 @@
       {
         "absolutePath": "@openzeppelin/contracts/utils/Strings.sol",
         "file": "@openzeppelin/contracts/utils/Strings.sol",
-        "id": 7833,
+        "id": 7866,
         "nodeType": "ImportDirective",
-        "scope": 8040,
+        "scope": 8073,
         "sourceUnit": 3385,
         "src": "132:51:24",
         "symbolAliases": [],
@@ -71,9 +71,9 @@
       {
         "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
         "file": "@openzeppelin/contracts/math/SafeMath.sol",
-        "id": 7834,
+        "id": 7867,
         "nodeType": "ImportDirective",
-        "scope": 8040,
+        "scope": 8073,
         "sourceUnit": 534,
         "src": "184:51:24",
         "symbolAliases": [],
@@ -82,9 +82,9 @@
       {
         "absolutePath": "@openzeppelin/contracts/math/SignedSafeMath.sol",
         "file": "@openzeppelin/contracts/math/SignedSafeMath.sol",
-        "id": 7835,
+        "id": 7868,
         "nodeType": "ImportDirective",
-        "scope": 8040,
+        "scope": 8073,
         "sourceUnit": 713,
         "src": "236:57:24",
         "symbolAliases": [],
@@ -93,9 +93,9 @@
       {
         "absolutePath": "base64-sol/base64.sol",
         "file": "base64-sol/base64.sol",
-        "id": 7836,
+        "id": 7869,
         "nodeType": "ImportDirective",
-        "scope": 8040,
+        "scope": 8073,
         "sourceUnit": 3500,
         "src": "294:31:24",
         "symbolAliases": [],
@@ -104,10 +104,10 @@
       {
         "absolutePath": "project:/contracts/lib/HexStrings.sol",
         "file": "./HexStrings.sol",
-        "id": 7837,
+        "id": 7870,
         "nodeType": "ImportDirective",
-        "scope": 8040,
-        "sourceUnit": 7830,
+        "scope": 8073,
+        "sourceUnit": 7863,
         "src": "326:26:24",
         "symbolAliases": [],
         "unitAlias": ""
@@ -118,17 +118,17 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 8039,
+        "id": 8072,
         "linearizedBaseContracts": [
-          8039
+          8072
         ],
         "name": "NFTSVG",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 7840,
+            "id": 7873,
             "libraryName": {
-              "id": 7838,
+              "id": 7871,
               "name": "Strings",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 3384,
@@ -141,7 +141,7 @@
             "nodeType": "UsingForDirective",
             "src": "375:26:24",
             "typeName": {
-              "id": 7839,
+              "id": 7872,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "393:7:24",
@@ -153,15 +153,15 @@
           },
           {
             "canonicalName": "NFTSVG.SVGParams",
-            "id": 7855,
+            "id": 7888,
             "members": [
               {
                 "constant": false,
-                "id": 7842,
+                "id": 7875,
                 "mutability": "mutable",
                 "name": "tokenId",
                 "nodeType": "VariableDeclaration",
-                "scope": 7855,
+                "scope": 7888,
                 "src": "434:15:24",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -170,7 +170,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7841,
+                  "id": 7874,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "434:7:24",
@@ -183,11 +183,11 @@
               },
               {
                 "constant": false,
-                "id": 7844,
+                "id": 7877,
                 "mutability": "mutable",
                 "name": "blockNumber",
                 "nodeType": "VariableDeclaration",
-                "scope": 7855,
+                "scope": 7888,
                 "src": "459:19:24",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -196,7 +196,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7843,
+                  "id": 7876,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "459:7:24",
@@ -209,11 +209,11 @@
               },
               {
                 "constant": false,
-                "id": 7846,
+                "id": 7879,
                 "mutability": "mutable",
                 "name": "uToken",
                 "nodeType": "VariableDeclaration",
-                "scope": 7855,
+                "scope": 7888,
                 "src": "488:13:24",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -222,7 +222,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7845,
+                  "id": 7878,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "488:6:24",
@@ -235,11 +235,11 @@
               },
               {
                 "constant": false,
-                "id": 7848,
+                "id": 7881,
                 "mutability": "mutable",
                 "name": "longitude",
                 "nodeType": "VariableDeclaration",
-                "scope": 7855,
+                "scope": 7888,
                 "src": "511:16:24",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -248,7 +248,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7847,
+                  "id": 7880,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "511:6:24",
@@ -261,11 +261,11 @@
               },
               {
                 "constant": false,
-                "id": 7850,
+                "id": 7883,
                 "mutability": "mutable",
                 "name": "name",
                 "nodeType": "VariableDeclaration",
-                "scope": 7855,
+                "scope": 7888,
                 "src": "537:11:24",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -274,7 +274,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7849,
+                  "id": 7882,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "537:6:24",
@@ -287,11 +287,11 @@
               },
               {
                 "constant": false,
-                "id": 7852,
+                "id": 7885,
                 "mutability": "mutable",
                 "name": "color0",
                 "nodeType": "VariableDeclaration",
-                "scope": 7855,
+                "scope": 7888,
                 "src": "558:13:24",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -300,7 +300,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7851,
+                  "id": 7884,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "558:6:24",
@@ -313,11 +313,11 @@
               },
               {
                 "constant": false,
-                "id": 7854,
+                "id": 7887,
                 "mutability": "mutable",
                 "name": "color1",
                 "nodeType": "VariableDeclaration",
-                "scope": 7855,
+                "scope": 7888,
                 "src": "581:13:24",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -326,7 +326,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7853,
+                  "id": 7886,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "581:6:24",
@@ -340,13 +340,13 @@
             ],
             "name": "SVGParams",
             "nodeType": "StructDefinition",
-            "scope": 8039,
+            "scope": 8072,
             "src": "407:194:24",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 7876,
+              "id": 7909,
               "nodeType": "Block",
               "src": "695:306:24",
               "statements": [
@@ -358,14 +358,14 @@
                           {
                             "arguments": [
                               {
-                                "id": 7867,
+                                "id": 7900,
                                 "name": "params",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7857,
+                                "referencedDeclaration": 7890,
                                 "src": "802:6:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                  "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                   "typeString": "struct NFTSVG.SVGParams memory"
                                 }
                               }
@@ -373,22 +373,22 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                  "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                   "typeString": "struct NFTSVG.SVGParams memory"
                                 }
                               ],
-                              "id": 7866,
+                              "id": 7899,
                               "name": "generateSVGDefs",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7904,
+                              "referencedDeclaration": 7937,
                               "src": "786:15:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7855_memory_ptr_$returns$_t_string_memory_ptr_$",
+                                "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7888_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)"
                               }
                             },
-                            "id": 7868,
+                            "id": 7901,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -406,14 +406,14 @@
                           {
                             "arguments": [
                               {
-                                "id": 7870,
+                                "id": 7903,
                                 "name": "params",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7857,
+                                "referencedDeclaration": 7890,
                                 "src": "850:6:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                  "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                   "typeString": "struct NFTSVG.SVGParams memory"
                                 }
                               }
@@ -421,22 +421,22 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                  "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                   "typeString": "struct NFTSVG.SVGParams memory"
                                 }
                               ],
-                              "id": 7869,
+                              "id": 7902,
                               "name": "generateSVGFigures",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8038,
+                              "referencedDeclaration": 8071,
                               "src": "831:18:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7855_memory_ptr_$returns$_t_string_memory_ptr_$",
+                                "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7888_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)"
                               }
                             },
-                            "id": 7871,
+                            "id": 7904,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -453,7 +453,7 @@
                           },
                           {
                             "hexValue": "3c2f7376673e",
-                            "id": 7872,
+                            "id": 7905,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -484,7 +484,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 7864,
+                            "id": 7897,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -495,7 +495,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 7865,
+                          "id": 7898,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -508,7 +508,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 7873,
+                        "id": 7906,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -531,7 +531,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 7863,
+                      "id": 7896,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -543,14 +543,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 7862,
+                        "id": 7895,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "724:6:24",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 7874,
+                    "id": 7907,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -565,45 +565,45 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 7861,
-                  "id": 7875,
+                  "functionReturnParameters": 7894,
+                  "id": 7908,
                   "nodeType": "Return",
                   "src": "705:289:24"
                 }
               ]
             },
-            "id": 7877,
+            "id": 7910,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "generateSVG",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7858,
+              "id": 7891,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7857,
+                  "id": 7890,
                   "mutability": "mutable",
                   "name": "params",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7877,
+                  "scope": 7910,
                   "src": "628:23:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                     "typeString": "struct NFTSVG.SVGParams"
                   },
                   "typeName": {
-                    "id": 7856,
+                    "id": 7889,
                     "name": "SVGParams",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7855,
+                    "referencedDeclaration": 7888,
                     "src": "628:9:24",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_SVGParams_$7855_storage_ptr",
+                      "typeIdentifier": "t_struct$_SVGParams_$7888_storage_ptr",
                       "typeString": "struct NFTSVG.SVGParams"
                     }
                   },
@@ -613,16 +613,16 @@
               "src": "627:25:24"
             },
             "returnParameters": {
-              "id": 7861,
+              "id": 7894,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7860,
+                  "id": 7893,
                   "mutability": "mutable",
                   "name": "svg",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7877,
+                  "scope": 7910,
                   "src": "676:17:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -631,7 +631,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7859,
+                    "id": 7892,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "676:6:24",
@@ -645,7 +645,7 @@
               ],
               "src": "675:19:24"
             },
-            "scope": 8039,
+            "scope": 8072,
             "src": "607:394:24",
             "stateMutability": "pure",
             "virtual": false,
@@ -653,23 +653,23 @@
           },
           {
             "body": {
-              "id": 7903,
+              "id": 7936,
               "nodeType": "Block",
               "src": "1098:432:24",
               "statements": [
                 {
                   "expression": {
-                    "id": 7901,
+                    "id": 7934,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 7884,
+                      "id": 7917,
                       "name": "svg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7882,
+                      "referencedDeclaration": 7915,
                       "src": "1108:3:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -684,7 +684,7 @@
                           "arguments": [
                             {
                               "hexValue": "3c7376672077696474683d2235313222206865696768743d22353132222076696577426f783d223020302035313220353132222066696c6c3d226e6f6e652220786d6c6e733d22687474703a2f2f7777772e77332e6f72672f323030302f737667223e",
-                              "id": 7889,
+                              "id": 7922,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -700,7 +700,7 @@
                             },
                             {
                               "hexValue": "3c646566733e",
-                              "id": 7890,
+                              "id": 7923,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -716,7 +716,7 @@
                             },
                             {
                               "hexValue": "3c6c696e6561724772616469656e742069643d226731222078313d223025222079313d2235302522203e",
-                              "id": 7891,
+                              "id": 7924,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -733,14 +733,14 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 7893,
+                                  "id": 7926,
                                   "name": "params",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 7879,
+                                  "referencedDeclaration": 7912,
                                   "src": "1399:6:24",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                     "typeString": "struct NFTSVG.SVGParams memory"
                                   }
                                 }
@@ -748,22 +748,22 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                     "typeString": "struct NFTSVG.SVGParams memory"
                                   }
                                 ],
-                                "id": 7892,
+                                "id": 7925,
                                 "name": "generateSVGColorPartOne",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7961,
+                                "referencedDeclaration": 7994,
                                 "src": "1375:23:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7855_memory_ptr_$returns$_t_string_memory_ptr_$",
+                                  "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7888_memory_ptr_$returns$_t_string_memory_ptr_$",
                                   "typeString": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)"
                                 }
                               },
-                              "id": 7894,
+                              "id": 7927,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -781,14 +781,14 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 7896,
+                                  "id": 7929,
                                   "name": "params",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 7879,
+                                  "referencedDeclaration": 7912,
                                   "src": "1448:6:24",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                     "typeString": "struct NFTSVG.SVGParams memory"
                                   }
                                 }
@@ -796,22 +796,22 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                     "typeString": "struct NFTSVG.SVGParams memory"
                                   }
                                 ],
-                                "id": 7895,
+                                "id": 7928,
                                 "name": "generateSVGColorPartTwo",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 8018,
+                                "referencedDeclaration": 8051,
                                 "src": "1424:23:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7855_memory_ptr_$returns$_t_string_memory_ptr_$",
+                                  "typeIdentifier": "t_function_internal_pure$_t_struct$_SVGParams_$7888_memory_ptr_$returns$_t_string_memory_ptr_$",
                                   "typeString": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)"
                                 }
                               },
-                              "id": 7897,
+                              "id": 7930,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -828,7 +828,7 @@
                             },
                             {
                               "hexValue": "3c2f6c696e6561724772616469656e743e3c2f646566733e",
-                              "id": 7898,
+                              "id": 7931,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -871,7 +871,7 @@
                               }
                             ],
                             "expression": {
-                              "id": 7887,
+                              "id": 7920,
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -882,7 +882,7 @@
                                 "typeString": "abi"
                               }
                             },
-                            "id": 7888,
+                            "id": 7921,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -895,7 +895,7 @@
                               "typeString": "function () pure returns (bytes memory)"
                             }
                           },
-                          "id": 7899,
+                          "id": 7932,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -918,7 +918,7 @@
                             "typeString": "bytes memory"
                           }
                         ],
-                        "id": 7886,
+                        "id": 7919,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -930,14 +930,14 @@
                           "typeString": "type(string storage pointer)"
                         },
                         "typeName": {
-                          "id": 7885,
+                          "id": 7918,
                           "name": "string",
                           "nodeType": "ElementaryTypeName",
                           "src": "1114:6:24",
                           "typeDescriptions": {}
                         }
                       },
-                      "id": 7900,
+                      "id": 7933,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -958,44 +958,44 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 7902,
+                  "id": 7935,
                   "nodeType": "ExpressionStatement",
                   "src": "1108:415:24"
                 }
               ]
             },
-            "id": 7904,
+            "id": 7937,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "generateSVGDefs",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7880,
+              "id": 7913,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7879,
+                  "id": 7912,
                   "mutability": "mutable",
                   "name": "params",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7904,
+                  "scope": 7937,
                   "src": "1032:23:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                     "typeString": "struct NFTSVG.SVGParams"
                   },
                   "typeName": {
-                    "id": 7878,
+                    "id": 7911,
                     "name": "SVGParams",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7855,
+                    "referencedDeclaration": 7888,
                     "src": "1032:9:24",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_SVGParams_$7855_storage_ptr",
+                      "typeIdentifier": "t_struct$_SVGParams_$7888_storage_ptr",
                       "typeString": "struct NFTSVG.SVGParams"
                     }
                   },
@@ -1005,16 +1005,16 @@
               "src": "1031:25:24"
             },
             "returnParameters": {
-              "id": 7883,
+              "id": 7916,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7882,
+                  "id": 7915,
                   "mutability": "mutable",
                   "name": "svg",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7904,
+                  "scope": 7937,
                   "src": "1079:17:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1023,7 +1023,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7881,
+                    "id": 7914,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1079:6:24",
@@ -1037,7 +1037,7 @@
               ],
               "src": "1078:19:24"
             },
-            "scope": 8039,
+            "scope": 8072,
             "src": "1007:523:24",
             "stateMutability": "pure",
             "virtual": false,
@@ -1045,22 +1045,22 @@
           },
           {
             "body": {
-              "id": 7960,
+              "id": 7993,
               "nodeType": "Block",
               "src": "1635:688:24",
               "statements": [
                 {
                   "assignments": [
-                    7912
+                    7945
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7912,
+                      "id": 7945,
                       "mutability": "mutable",
                       "name": "values0",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7960,
+                      "scope": 7993,
                       "src": "1645:21:24",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1069,7 +1069,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 7911,
+                        "id": 7944,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "1645:6:24",
@@ -1081,14 +1081,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7925,
+                  "id": 7958,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
                             "hexValue": "23",
-                            "id": 7917,
+                            "id": 7950,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1104,25 +1104,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7918,
+                              "id": 7951,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7906,
+                              "referencedDeclaration": 7939,
                               "src": "1698:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7919,
+                            "id": 7952,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color0",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7852,
+                            "referencedDeclaration": 7885,
                             "src": "1698:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -1131,7 +1131,7 @@
                           },
                           {
                             "hexValue": "3b2023",
-                            "id": 7920,
+                            "id": 7953,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1147,25 +1147,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7921,
+                              "id": 7954,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7906,
+                              "referencedDeclaration": 7939,
                               "src": "1720:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7922,
+                            "id": 7955,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color1",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7854,
+                            "referencedDeclaration": 7887,
                             "src": "1720:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -1193,7 +1193,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 7915,
+                            "id": 7948,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1204,7 +1204,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 7916,
+                          "id": 7949,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1217,7 +1217,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 7923,
+                        "id": 7956,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1240,7 +1240,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 7914,
+                      "id": 7947,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1252,14 +1252,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 7913,
+                        "id": 7946,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "1669:6:24",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 7924,
+                    "id": 7957,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1279,16 +1279,16 @@
                 },
                 {
                   "assignments": [
-                    7927
+                    7960
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7927,
+                      "id": 7960,
                       "mutability": "mutable",
                       "name": "values1",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7960,
+                      "scope": 7993,
                       "src": "1745:21:24",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1297,7 +1297,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 7926,
+                        "id": 7959,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "1745:6:24",
@@ -1309,14 +1309,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7940,
+                  "id": 7973,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
                             "hexValue": "23",
-                            "id": 7932,
+                            "id": 7965,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1332,25 +1332,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7933,
+                              "id": 7966,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7906,
+                              "referencedDeclaration": 7939,
                               "src": "1798:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7934,
+                            "id": 7967,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color1",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7854,
+                            "referencedDeclaration": 7887,
                             "src": "1798:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -1359,7 +1359,7 @@
                           },
                           {
                             "hexValue": "3b2023",
-                            "id": 7935,
+                            "id": 7968,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1375,25 +1375,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7936,
+                              "id": 7969,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7906,
+                              "referencedDeclaration": 7939,
                               "src": "1820:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7937,
+                            "id": 7970,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color0",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7852,
+                            "referencedDeclaration": 7885,
                             "src": "1820:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -1421,7 +1421,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 7930,
+                            "id": 7963,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1432,7 +1432,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 7931,
+                          "id": 7964,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1445,7 +1445,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 7938,
+                        "id": 7971,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1468,7 +1468,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 7929,
+                      "id": 7962,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1480,14 +1480,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 7928,
+                        "id": 7961,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "1769:6:24",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 7939,
+                    "id": 7972,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1507,17 +1507,17 @@
                 },
                 {
                   "expression": {
-                    "id": 7958,
+                    "id": 7991,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 7941,
+                      "id": 7974,
                       "name": "svg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7909,
+                      "referencedDeclaration": 7942,
                       "src": "1845:3:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -1532,7 +1532,7 @@
                           "arguments": [
                             {
                               "hexValue": "3c73746f70206f66667365743d223025222073746f702d636f6c6f723d2223",
-                              "id": 7946,
+                              "id": 7979,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1548,25 +1548,25 @@
                             },
                             {
                               "expression": {
-                                "id": 7947,
+                                "id": 7980,
                                 "name": "params",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7906,
+                                "referencedDeclaration": 7939,
                                 "src": "1956:6:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                  "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                   "typeString": "struct NFTSVG.SVGParams memory"
                                 }
                               },
-                              "id": 7948,
+                              "id": 7981,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "color0",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 7852,
+                              "referencedDeclaration": 7885,
                               "src": "1956:13:24",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -1575,7 +1575,7 @@
                             },
                             {
                               "hexValue": "22203e",
-                              "id": 7949,
+                              "id": 7982,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1591,7 +1591,7 @@
                             },
                             {
                               "hexValue": "3c616e696d6174652069643d22613122206174747269627574654e616d653d2273746f702d636f6c6f72222076616c7565733d22",
-                              "id": 7950,
+                              "id": 7983,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1606,11 +1606,11 @@
                               "value": "<animate id=\"a1\" attributeName=\"stop-color\" values=\""
                             },
                             {
-                              "id": 7951,
+                              "id": 7984,
                               "name": "values0",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7912,
+                              "referencedDeclaration": 7945,
                               "src": "2082:7:24",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -1619,7 +1619,7 @@
                             },
                             {
                               "hexValue": "2220626567696e3d22303b2061322e656e6422206475723d22337322202f3e",
-                              "id": 7952,
+                              "id": 7985,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1635,7 +1635,7 @@
                             },
                             {
                               "hexValue": "3c616e696d6174652069643d22613222206174747269627574654e616d653d2273746f702d636f6c6f72222076616c7565733d22",
-                              "id": 7953,
+                              "id": 7986,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1650,11 +1650,11 @@
                               "value": "<animate id=\"a2\" attributeName=\"stop-color\" values=\""
                             },
                             {
-                              "id": 7954,
+                              "id": 7987,
                               "name": "values1",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7927,
+                              "referencedDeclaration": 7960,
                               "src": "2230:7:24",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -1663,7 +1663,7 @@
                             },
                             {
                               "hexValue": "2220626567696e3d2261312e656e6422206475723d22337322202f3e3c2f73746f703e",
-                              "id": 7955,
+                              "id": 7988,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1718,7 +1718,7 @@
                               }
                             ],
                             "expression": {
-                              "id": 7944,
+                              "id": 7977,
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -1729,7 +1729,7 @@
                                 "typeString": "abi"
                               }
                             },
-                            "id": 7945,
+                            "id": 7978,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1742,7 +1742,7 @@
                               "typeString": "function () pure returns (bytes memory)"
                             }
                           },
-                          "id": 7956,
+                          "id": 7989,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1765,7 +1765,7 @@
                             "typeString": "bytes memory"
                           }
                         ],
-                        "id": 7943,
+                        "id": 7976,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1777,14 +1777,14 @@
                           "typeString": "type(string storage pointer)"
                         },
                         "typeName": {
-                          "id": 7942,
+                          "id": 7975,
                           "name": "string",
                           "nodeType": "ElementaryTypeName",
                           "src": "1851:6:24",
                           "typeDescriptions": {}
                         }
                       },
-                      "id": 7957,
+                      "id": 7990,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1805,44 +1805,44 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 7959,
+                  "id": 7992,
                   "nodeType": "ExpressionStatement",
                   "src": "1845:471:24"
                 }
               ]
             },
-            "id": 7961,
+            "id": 7994,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "generateSVGColorPartOne",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7907,
+              "id": 7940,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7906,
+                  "id": 7939,
                   "mutability": "mutable",
                   "name": "params",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7961,
+                  "scope": 7994,
                   "src": "1569:23:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                     "typeString": "struct NFTSVG.SVGParams"
                   },
                   "typeName": {
-                    "id": 7905,
+                    "id": 7938,
                     "name": "SVGParams",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7855,
+                    "referencedDeclaration": 7888,
                     "src": "1569:9:24",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_SVGParams_$7855_storage_ptr",
+                      "typeIdentifier": "t_struct$_SVGParams_$7888_storage_ptr",
                       "typeString": "struct NFTSVG.SVGParams"
                     }
                   },
@@ -1852,16 +1852,16 @@
               "src": "1568:25:24"
             },
             "returnParameters": {
-              "id": 7910,
+              "id": 7943,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7909,
+                  "id": 7942,
                   "mutability": "mutable",
                   "name": "svg",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7961,
+                  "scope": 7994,
                   "src": "1616:17:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1870,7 +1870,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7908,
+                    "id": 7941,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1616:6:24",
@@ -1884,7 +1884,7 @@
               ],
               "src": "1615:19:24"
             },
-            "scope": 8039,
+            "scope": 8072,
             "src": "1536:787:24",
             "stateMutability": "pure",
             "virtual": false,
@@ -1892,22 +1892,22 @@
           },
           {
             "body": {
-              "id": 8017,
+              "id": 8050,
               "nodeType": "Block",
               "src": "2428:690:24",
               "statements": [
                 {
                   "assignments": [
-                    7969
+                    8002
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7969,
+                      "id": 8002,
                       "mutability": "mutable",
                       "name": "values0",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8017,
+                      "scope": 8050,
                       "src": "2438:21:24",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1916,7 +1916,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 7968,
+                        "id": 8001,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2438:6:24",
@@ -1928,14 +1928,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7982,
+                  "id": 8015,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
                             "hexValue": "23",
-                            "id": 7974,
+                            "id": 8007,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1951,25 +1951,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7975,
+                              "id": 8008,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7963,
+                              "referencedDeclaration": 7996,
                               "src": "2491:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7976,
+                            "id": 8009,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color0",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7852,
+                            "referencedDeclaration": 7885,
                             "src": "2491:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -1978,7 +1978,7 @@
                           },
                           {
                             "hexValue": "3b2023",
-                            "id": 7977,
+                            "id": 8010,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1994,25 +1994,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7978,
+                              "id": 8011,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7963,
+                              "referencedDeclaration": 7996,
                               "src": "2513:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7979,
+                            "id": 8012,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color1",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7854,
+                            "referencedDeclaration": 7887,
                             "src": "2513:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -2040,7 +2040,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 7972,
+                            "id": 8005,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -2051,7 +2051,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 7973,
+                          "id": 8006,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2064,7 +2064,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 7980,
+                        "id": 8013,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2087,7 +2087,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 7971,
+                      "id": 8004,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2099,14 +2099,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 7970,
+                        "id": 8003,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2462:6:24",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 7981,
+                    "id": 8014,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2126,16 +2126,16 @@
                 },
                 {
                   "assignments": [
-                    7984
+                    8017
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7984,
+                      "id": 8017,
                       "mutability": "mutable",
                       "name": "values1",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8017,
+                      "scope": 8050,
                       "src": "2538:21:24",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -2144,7 +2144,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 7983,
+                        "id": 8016,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2538:6:24",
@@ -2156,14 +2156,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7997,
+                  "id": 8030,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
                             "hexValue": "23",
-                            "id": 7989,
+                            "id": 8022,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2179,25 +2179,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7990,
+                              "id": 8023,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7963,
+                              "referencedDeclaration": 7996,
                               "src": "2591:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7991,
+                            "id": 8024,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color1",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7854,
+                            "referencedDeclaration": 7887,
                             "src": "2591:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -2206,7 +2206,7 @@
                           },
                           {
                             "hexValue": "3b2023",
-                            "id": 7992,
+                            "id": 8025,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2222,25 +2222,25 @@
                           },
                           {
                             "expression": {
-                              "id": 7993,
+                              "id": 8026,
                               "name": "params",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7963,
+                              "referencedDeclaration": 7996,
                               "src": "2613:6:24",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                 "typeString": "struct NFTSVG.SVGParams memory"
                               }
                             },
-                            "id": 7994,
+                            "id": 8027,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "color0",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7852,
+                            "referencedDeclaration": 7885,
                             "src": "2613:13:24",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -2268,7 +2268,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 7987,
+                            "id": 8020,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -2279,7 +2279,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 7988,
+                          "id": 8021,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2292,7 +2292,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 7995,
+                        "id": 8028,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2315,7 +2315,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 7986,
+                      "id": 8019,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2327,14 +2327,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 7985,
+                        "id": 8018,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2562:6:24",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 7996,
+                    "id": 8029,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2354,17 +2354,17 @@
                 },
                 {
                   "expression": {
-                    "id": 8015,
+                    "id": 8048,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 7998,
+                      "id": 8031,
                       "name": "svg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7966,
+                      "referencedDeclaration": 7999,
                       "src": "2638:3:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -2379,7 +2379,7 @@
                           "arguments": [
                             {
                               "hexValue": "3c73746f70206f66667365743d2231303025222073746f702d636f6c6f723d2223",
-                              "id": 8003,
+                              "id": 8036,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2395,25 +2395,25 @@
                             },
                             {
                               "expression": {
-                                "id": 8004,
+                                "id": 8037,
                                 "name": "params",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7963,
+                                "referencedDeclaration": 7996,
                                 "src": "2751:6:24",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                  "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                   "typeString": "struct NFTSVG.SVGParams memory"
                                 }
                               },
-                              "id": 8005,
+                              "id": 8038,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "color1",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 7854,
+                              "referencedDeclaration": 7887,
                               "src": "2751:13:24",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -2422,7 +2422,7 @@
                             },
                             {
                               "hexValue": "22203e",
-                              "id": 8006,
+                              "id": 8039,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2438,7 +2438,7 @@
                             },
                             {
                               "hexValue": "3c616e696d6174652069643d22613322206174747269627574654e616d653d2273746f702d636f6c6f72222076616c7565733d22",
-                              "id": 8007,
+                              "id": 8040,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2453,11 +2453,11 @@
                               "value": "<animate id=\"a3\" attributeName=\"stop-color\" values=\""
                             },
                             {
-                              "id": 8008,
+                              "id": 8041,
                               "name": "values1",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7984,
+                              "referencedDeclaration": 8017,
                               "src": "2877:7:24",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -2466,7 +2466,7 @@
                             },
                             {
                               "hexValue": "2220626567696e3d22303b2061342e656e6422206475723d22337322202f3e",
-                              "id": 8009,
+                              "id": 8042,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2482,7 +2482,7 @@
                             },
                             {
                               "hexValue": "3c616e696d6174652069643d22613422206174747269627574654e616d653d2273746f702d636f6c6f72222076616c7565733d22",
-                              "id": 8010,
+                              "id": 8043,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2497,11 +2497,11 @@
                               "value": "<animate id=\"a4\" attributeName=\"stop-color\" values=\""
                             },
                             {
-                              "id": 8011,
+                              "id": 8044,
                               "name": "values0",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7969,
+                              "referencedDeclaration": 8002,
                               "src": "3025:7:24",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -2510,7 +2510,7 @@
                             },
                             {
                               "hexValue": "2220626567696e3d2261332e656e6422206475723d22337322202f3e3c2f73746f703e",
-                              "id": 8012,
+                              "id": 8045,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2565,7 +2565,7 @@
                               }
                             ],
                             "expression": {
-                              "id": 8001,
+                              "id": 8034,
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -2576,7 +2576,7 @@
                                 "typeString": "abi"
                               }
                             },
-                            "id": 8002,
+                            "id": 8035,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2589,7 +2589,7 @@
                               "typeString": "function () pure returns (bytes memory)"
                             }
                           },
-                          "id": 8013,
+                          "id": 8046,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2612,7 +2612,7 @@
                             "typeString": "bytes memory"
                           }
                         ],
-                        "id": 8000,
+                        "id": 8033,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2624,14 +2624,14 @@
                           "typeString": "type(string storage pointer)"
                         },
                         "typeName": {
-                          "id": 7999,
+                          "id": 8032,
                           "name": "string",
                           "nodeType": "ElementaryTypeName",
                           "src": "2644:6:24",
                           "typeDescriptions": {}
                         }
                       },
-                      "id": 8014,
+                      "id": 8047,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2652,44 +2652,44 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 8016,
+                  "id": 8049,
                   "nodeType": "ExpressionStatement",
                   "src": "2638:473:24"
                 }
               ]
             },
-            "id": 8018,
+            "id": 8051,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "generateSVGColorPartTwo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7964,
+              "id": 7997,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7963,
+                  "id": 7996,
                   "mutability": "mutable",
                   "name": "params",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8018,
+                  "scope": 8051,
                   "src": "2362:23:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                     "typeString": "struct NFTSVG.SVGParams"
                   },
                   "typeName": {
-                    "id": 7962,
+                    "id": 7995,
                     "name": "SVGParams",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7855,
+                    "referencedDeclaration": 7888,
                     "src": "2362:9:24",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_SVGParams_$7855_storage_ptr",
+                      "typeIdentifier": "t_struct$_SVGParams_$7888_storage_ptr",
                       "typeString": "struct NFTSVG.SVGParams"
                     }
                   },
@@ -2699,16 +2699,16 @@
               "src": "2361:25:24"
             },
             "returnParameters": {
-              "id": 7967,
+              "id": 8000,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7966,
+                  "id": 7999,
                   "mutability": "mutable",
                   "name": "svg",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8018,
+                  "scope": 8051,
                   "src": "2409:17:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2717,7 +2717,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7965,
+                    "id": 7998,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2409:6:24",
@@ -2731,7 +2731,7 @@
               ],
               "src": "2408:19:24"
             },
-            "scope": 8039,
+            "scope": 8072,
             "src": "2329:789:24",
             "stateMutability": "pure",
             "virtual": false,
@@ -2739,23 +2739,23 @@
           },
           {
             "body": {
-              "id": 8037,
+              "id": 8070,
               "nodeType": "Block",
               "src": "3799:1479:24",
               "statements": [
                 {
                   "expression": {
-                    "id": 8035,
+                    "id": 8068,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8025,
+                      "id": 8058,
                       "name": "svg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8023,
+                      "referencedDeclaration": 8056,
                       "src": "3809:3:24",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -2770,7 +2770,7 @@
                           "arguments": [
                             {
                               "hexValue": "3c726563742069643d22722220783d22302220793d2230222072783d223236222072793d223236222077696474683d2235313222206865696768743d22353132222066696c6c3d2275726c282367312922202f3e",
-                              "id": 8030,
+                              "id": 8063,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2786,7 +2786,7 @@
                             },
                             {
                               "hexValue": "3c7265637420783d2231362220793d223136222077696474683d2234383022206865696768743d22343830222072783d223136222072793d223136222066696c6c3d227267626128302c302c302c302922207374726f6b653d2272676261283235352c3235352c3235352c302e3429223e3c2f726563743e",
-                              "id": 8031,
+                              "id": 8064,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2802,7 +2802,7 @@
                             },
                             {
                               "hexValue": "3c7265637420783d22302220793d2230222077696474683d2235313222206865696768743d22353132222072783d223235222072793d223235222066696c6c3d227267626128302c302c302c302922207374726f6b653d2272676261283235352c3235352c3235352c302e3429223e3c2f726563743e",
-                              "id": 8032,
+                              "id": 8065,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2833,7 +2833,7 @@
                               }
                             ],
                             "expression": {
-                              "id": 8028,
+                              "id": 8061,
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -2844,7 +2844,7 @@
                                 "typeString": "abi"
                               }
                             },
-                            "id": 8029,
+                            "id": 8062,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2857,7 +2857,7 @@
                               "typeString": "function () pure returns (bytes memory)"
                             }
                           },
-                          "id": 8033,
+                          "id": 8066,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2880,7 +2880,7 @@
                             "typeString": "bytes memory"
                           }
                         ],
-                        "id": 8027,
+                        "id": 8060,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2892,14 +2892,14 @@
                           "typeString": "type(string storage pointer)"
                         },
                         "typeName": {
-                          "id": 8026,
+                          "id": 8059,
                           "name": "string",
                           "nodeType": "ElementaryTypeName",
                           "src": "3815:6:24",
                           "typeDescriptions": {}
                         }
                       },
-                      "id": 8034,
+                      "id": 8067,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2920,44 +2920,44 @@
                       "typeString": "string memory"
                     }
                   },
-                  "id": 8036,
+                  "id": 8069,
                   "nodeType": "ExpressionStatement",
                   "src": "3809:1462:24"
                 }
               ]
             },
-            "id": 8038,
+            "id": 8071,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "generateSVGFigures",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8021,
+              "id": 8054,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8020,
+                  "id": 8053,
                   "mutability": "mutable",
                   "name": "params",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8038,
+                  "scope": 8071,
                   "src": "3733:23:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                    "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                     "typeString": "struct NFTSVG.SVGParams"
                   },
                   "typeName": {
-                    "id": 8019,
+                    "id": 8052,
                     "name": "SVGParams",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7855,
+                    "referencedDeclaration": 7888,
                     "src": "3733:9:24",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_SVGParams_$7855_storage_ptr",
+                      "typeIdentifier": "t_struct$_SVGParams_$7888_storage_ptr",
                       "typeString": "struct NFTSVG.SVGParams"
                     }
                   },
@@ -2967,16 +2967,16 @@
               "src": "3732:25:24"
             },
             "returnParameters": {
-              "id": 8024,
+              "id": 8057,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8023,
+                  "id": 8056,
                   "mutability": "mutable",
                   "name": "svg",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8038,
+                  "scope": 8071,
                   "src": "3780:17:24",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2985,7 +2985,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 8022,
+                    "id": 8055,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "3780:6:24",
@@ -2999,14 +2999,14 @@
               ],
               "src": "3779:19:24"
             },
-            "scope": 8039,
+            "scope": 8072,
             "src": "3705:1573:24",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "private"
           }
         ],
-        "scope": 8040,
+        "scope": 8073,
         "src": "354:5570:24"
       }
     ],
@@ -3020,10 +3020,10 @@
           3499
         ],
         "HexStrings": [
-          7829
+          7862
         ],
         "NFTSVG": [
-          8039
+          8072
         ],
         "SafeMath": [
           533
@@ -3047,7 +3047,7 @@
             ".6"
           ]
         },
-        "id": 7831,
+        "id": 7864,
         "name": "PragmaDirective",
         "src": "87:23:24"
       },
@@ -3058,7 +3058,7 @@
             "v2"
           ]
         },
-        "id": 7832,
+        "id": 7865,
         "name": "PragmaDirective",
         "src": "111:19:24"
       },
@@ -3067,13 +3067,13 @@
           "SourceUnit": 3385,
           "absolutePath": "@openzeppelin/contracts/utils/Strings.sol",
           "file": "@openzeppelin/contracts/utils/Strings.sol",
-          "scope": 8040,
+          "scope": 8073,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 7833,
+        "id": 7866,
         "name": "ImportDirective",
         "src": "132:51:24"
       },
@@ -3082,13 +3082,13 @@
           "SourceUnit": 534,
           "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
           "file": "@openzeppelin/contracts/math/SafeMath.sol",
-          "scope": 8040,
+          "scope": 8073,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 7834,
+        "id": 7867,
         "name": "ImportDirective",
         "src": "184:51:24"
       },
@@ -3097,13 +3097,13 @@
           "SourceUnit": 713,
           "absolutePath": "@openzeppelin/contracts/math/SignedSafeMath.sol",
           "file": "@openzeppelin/contracts/math/SignedSafeMath.sol",
-          "scope": 8040,
+          "scope": 8073,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 7835,
+        "id": 7868,
         "name": "ImportDirective",
         "src": "236:57:24"
       },
@@ -3112,28 +3112,28 @@
           "SourceUnit": 3500,
           "absolutePath": "base64-sol/base64.sol",
           "file": "base64-sol/base64.sol",
-          "scope": 8040,
+          "scope": 8073,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 7836,
+        "id": 7869,
         "name": "ImportDirective",
         "src": "294:31:24"
       },
       {
         "attributes": {
-          "SourceUnit": 7830,
+          "SourceUnit": 7863,
           "absolutePath": "project:/contracts/lib/HexStrings.sol",
           "file": "./HexStrings.sol",
-          "scope": 8040,
+          "scope": 8073,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 7837,
+        "id": 7870,
         "name": "ImportDirective",
         "src": "326:26:24"
       },
@@ -3149,10 +3149,10 @@
           "contractKind": "library",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            8039
+            8072
           ],
           "name": "NFTSVG",
-          "scope": 8040
+          "scope": 8073
         },
         "children": [
           {
@@ -3163,7 +3163,7 @@
                   "referencedDeclaration": 3384,
                   "type": "library Strings"
                 },
-                "id": 7838,
+                "id": 7871,
                 "name": "UserDefinedTypeName",
                 "src": "381:7:24"
               },
@@ -3172,12 +3172,12 @@
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 7839,
+                "id": 7872,
                 "name": "ElementaryTypeName",
                 "src": "393:7:24"
               }
             ],
-            "id": 7840,
+            "id": 7873,
             "name": "UsingForDirective",
             "src": "375:26:24"
           },
@@ -3185,7 +3185,7 @@
             "attributes": {
               "canonicalName": "NFTSVG.SVGParams",
               "name": "SVGParams",
-              "scope": 8039,
+              "scope": 8072,
               "visibility": "public"
             },
             "children": [
@@ -3194,7 +3194,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "scope": 7855,
+                  "scope": 7888,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -3206,12 +3206,12 @@
                       "name": "uint256",
                       "type": "uint256"
                     },
-                    "id": 7841,
+                    "id": 7874,
                     "name": "ElementaryTypeName",
                     "src": "434:7:24"
                   }
                 ],
-                "id": 7842,
+                "id": 7875,
                 "name": "VariableDeclaration",
                 "src": "434:15:24"
               },
@@ -3220,7 +3220,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "blockNumber",
-                  "scope": 7855,
+                  "scope": 7888,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -3232,12 +3232,12 @@
                       "name": "uint256",
                       "type": "uint256"
                     },
-                    "id": 7843,
+                    "id": 7876,
                     "name": "ElementaryTypeName",
                     "src": "459:7:24"
                   }
                 ],
-                "id": 7844,
+                "id": 7877,
                 "name": "VariableDeclaration",
                 "src": "459:19:24"
               },
@@ -3246,7 +3246,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "uToken",
-                  "scope": 7855,
+                  "scope": 7888,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -3258,12 +3258,12 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 7845,
+                    "id": 7878,
                     "name": "ElementaryTypeName",
                     "src": "488:6:24"
                   }
                 ],
-                "id": 7846,
+                "id": 7879,
                 "name": "VariableDeclaration",
                 "src": "488:13:24"
               },
@@ -3272,7 +3272,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "longitude",
-                  "scope": 7855,
+                  "scope": 7888,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -3284,12 +3284,12 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 7847,
+                    "id": 7880,
                     "name": "ElementaryTypeName",
                     "src": "511:6:24"
                   }
                 ],
-                "id": 7848,
+                "id": 7881,
                 "name": "VariableDeclaration",
                 "src": "511:16:24"
               },
@@ -3298,7 +3298,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "name",
-                  "scope": 7855,
+                  "scope": 7888,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -3310,12 +3310,12 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 7849,
+                    "id": 7882,
                     "name": "ElementaryTypeName",
                     "src": "537:6:24"
                   }
                 ],
-                "id": 7850,
+                "id": 7883,
                 "name": "VariableDeclaration",
                 "src": "537:11:24"
               },
@@ -3324,7 +3324,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "color0",
-                  "scope": 7855,
+                  "scope": 7888,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -3336,12 +3336,12 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 7851,
+                    "id": 7884,
                     "name": "ElementaryTypeName",
                     "src": "558:6:24"
                   }
                 ],
-                "id": 7852,
+                "id": 7885,
                 "name": "VariableDeclaration",
                 "src": "558:13:24"
               },
@@ -3350,7 +3350,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "color1",
-                  "scope": 7855,
+                  "scope": 7888,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -3362,17 +3362,17 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 7853,
+                    "id": 7886,
                     "name": "ElementaryTypeName",
                     "src": "581:6:24"
                   }
                 ],
-                "id": 7854,
+                "id": 7887,
                 "name": "VariableDeclaration",
                 "src": "581:13:24"
               }
             ],
-            "id": 7855,
+            "id": 7888,
             "name": "StructDefinition",
             "src": "407:194:24"
           },
@@ -3385,7 +3385,7 @@
                 null
               ],
               "name": "generateSVG",
-              "scope": 8039,
+              "scope": 8072,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "internal"
@@ -3398,7 +3398,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "params",
-                      "scope": 7877,
+                      "scope": 7910,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct NFTSVG.SVGParams",
@@ -3408,20 +3408,20 @@
                       {
                         "attributes": {
                           "name": "SVGParams",
-                          "referencedDeclaration": 7855,
+                          "referencedDeclaration": 7888,
                           "type": "struct NFTSVG.SVGParams"
                         },
-                        "id": 7856,
+                        "id": 7889,
                         "name": "UserDefinedTypeName",
                         "src": "628:9:24"
                       }
                     ],
-                    "id": 7857,
+                    "id": 7890,
                     "name": "VariableDeclaration",
                     "src": "628:23:24"
                   }
                 ],
-                "id": 7858,
+                "id": 7891,
                 "name": "ParameterList",
                 "src": "627:25:24"
               },
@@ -3432,7 +3432,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "svg",
-                      "scope": 7877,
+                      "scope": 7910,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -3444,17 +3444,17 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 7859,
+                        "id": 7892,
                         "name": "ElementaryTypeName",
                         "src": "676:6:24"
                       }
                     ],
-                    "id": 7860,
+                    "id": 7893,
                     "name": "VariableDeclaration",
                     "src": "676:17:24"
                   }
                 ],
-                "id": 7861,
+                "id": 7894,
                 "name": "ParameterList",
                 "src": "675:19:24"
               },
@@ -3462,7 +3462,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 7861
+                      "functionReturnParameters": 7894
                     },
                     "children": [
                       {
@@ -3499,12 +3499,12 @@
                                 "attributes": {
                                   "name": "string"
                                 },
-                                "id": 7862,
+                                "id": 7895,
                                 "name": "ElementaryTypeName",
                                 "src": "724:6:24"
                               }
                             ],
-                            "id": 7863,
+                            "id": 7896,
                             "name": "ElementaryTypeNameExpression",
                             "src": "724:6:24"
                           },
@@ -3556,12 +3556,12 @@
                                       "type": "abi",
                                       "value": "abi"
                                     },
-                                    "id": 7864,
+                                    "id": 7897,
                                     "name": "Identifier",
                                     "src": "748:3:24"
                                   }
                                 ],
-                                "id": 7865,
+                                "id": 7898,
                                 "name": "MemberAccess",
                                 "src": "748:16:24"
                               },
@@ -3584,18 +3584,18 @@
                                     "attributes": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                          "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                           "typeString": "struct NFTSVG.SVGParams memory"
                                         }
                                       ],
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7904,
+                                      "referencedDeclaration": 7937,
                                       "type": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)",
                                       "value": "generateSVGDefs"
                                     },
-                                    "id": 7866,
+                                    "id": 7899,
                                     "name": "Identifier",
                                     "src": "786:15:24"
                                   },
@@ -3604,16 +3604,16 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7857,
+                                      "referencedDeclaration": 7890,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7867,
+                                    "id": 7900,
                                     "name": "Identifier",
                                     "src": "802:6:24"
                                   }
                                 ],
-                                "id": 7868,
+                                "id": 7901,
                                 "name": "FunctionCall",
                                 "src": "786:23:24"
                               },
@@ -3636,18 +3636,18 @@
                                     "attributes": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                          "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                           "typeString": "struct NFTSVG.SVGParams memory"
                                         }
                                       ],
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 8038,
+                                      "referencedDeclaration": 8071,
                                       "type": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)",
                                       "value": "generateSVGFigures"
                                     },
-                                    "id": 7869,
+                                    "id": 7902,
                                     "name": "Identifier",
                                     "src": "831:18:24"
                                   },
@@ -3656,16 +3656,16 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7857,
+                                      "referencedDeclaration": 7890,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7870,
+                                    "id": 7903,
                                     "name": "Identifier",
                                     "src": "850:6:24"
                                   }
                                 ],
-                                "id": 7871,
+                                "id": 7904,
                                 "name": "FunctionCall",
                                 "src": "831:26:24"
                               },
@@ -3680,32 +3680,32 @@
                                   "type": "literal_string \"</svg>\"",
                                   "value": "</svg>"
                                 },
-                                "id": 7872,
+                                "id": 7905,
                                 "name": "Literal",
                                 "src": "954:8:24"
                               }
                             ],
-                            "id": 7873,
+                            "id": 7906,
                             "name": "FunctionCall",
                             "src": "748:232:24"
                           }
                         ],
-                        "id": 7874,
+                        "id": 7907,
                         "name": "FunctionCall",
                         "src": "724:270:24"
                       }
                     ],
-                    "id": 7875,
+                    "id": 7908,
                     "name": "Return",
                     "src": "705:289:24"
                   }
                 ],
-                "id": 7876,
+                "id": 7909,
                 "name": "Block",
                 "src": "695:306:24"
               }
             ],
-            "id": 7877,
+            "id": 7910,
             "name": "FunctionDefinition",
             "src": "607:394:24"
           },
@@ -3718,7 +3718,7 @@
                 null
               ],
               "name": "generateSVGDefs",
-              "scope": 8039,
+              "scope": 8072,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "private"
@@ -3731,7 +3731,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "params",
-                      "scope": 7904,
+                      "scope": 7937,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct NFTSVG.SVGParams",
@@ -3741,20 +3741,20 @@
                       {
                         "attributes": {
                           "name": "SVGParams",
-                          "referencedDeclaration": 7855,
+                          "referencedDeclaration": 7888,
                           "type": "struct NFTSVG.SVGParams"
                         },
-                        "id": 7878,
+                        "id": 7911,
                         "name": "UserDefinedTypeName",
                         "src": "1032:9:24"
                       }
                     ],
-                    "id": 7879,
+                    "id": 7912,
                     "name": "VariableDeclaration",
                     "src": "1032:23:24"
                   }
                 ],
-                "id": 7880,
+                "id": 7913,
                 "name": "ParameterList",
                 "src": "1031:25:24"
               },
@@ -3765,7 +3765,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "svg",
-                      "scope": 7904,
+                      "scope": 7937,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -3777,17 +3777,17 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 7881,
+                        "id": 7914,
                         "name": "ElementaryTypeName",
                         "src": "1079:6:24"
                       }
                     ],
-                    "id": 7882,
+                    "id": 7915,
                     "name": "VariableDeclaration",
                     "src": "1079:17:24"
                   }
                 ],
-                "id": 7883,
+                "id": 7916,
                 "name": "ParameterList",
                 "src": "1078:19:24"
               },
@@ -3810,11 +3810,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 7882,
+                              "referencedDeclaration": 7915,
                               "type": "string memory",
                               "value": "svg"
                             },
-                            "id": 7884,
+                            "id": 7917,
                             "name": "Identifier",
                             "src": "1108:3:24"
                           },
@@ -3852,12 +3852,12 @@
                                     "attributes": {
                                       "name": "string"
                                     },
-                                    "id": 7885,
+                                    "id": 7918,
                                     "name": "ElementaryTypeName",
                                     "src": "1114:6:24"
                                   }
                                 ],
-                                "id": 7886,
+                                "id": 7919,
                                 "name": "ElementaryTypeNameExpression",
                                 "src": "1114:6:24"
                               },
@@ -3921,12 +3921,12 @@
                                           "type": "abi",
                                           "value": "abi"
                                         },
-                                        "id": 7887,
+                                        "id": 7920,
                                         "name": "Identifier",
                                         "src": "1134:3:24"
                                       }
                                     ],
-                                    "id": 7888,
+                                    "id": 7921,
                                     "name": "MemberAccess",
                                     "src": "1134:16:24"
                                   },
@@ -3941,7 +3941,7 @@
                                       "type": "literal_string \"<svg width=\"512\" height=\"512\" viewBox=\"0 0 512 512\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\"",
                                       "value": "<svg width=\"512\" height=\"512\" viewBox=\"0 0 512 512\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
                                     },
-                                    "id": 7889,
+                                    "id": 7922,
                                     "name": "Literal",
                                     "src": "1168:101:24"
                                   },
@@ -3956,7 +3956,7 @@
                                       "type": "literal_string \"<defs>\"",
                                       "value": "<defs>"
                                     },
-                                    "id": 7890,
+                                    "id": 7923,
                                     "name": "Literal",
                                     "src": "1287:8:24"
                                   },
@@ -3971,7 +3971,7 @@
                                       "type": "literal_string \"<linearGradient id=\"g1\" x1=\"0%\" y1=\"50%\" >\"",
                                       "value": "<linearGradient id=\"g1\" x1=\"0%\" y1=\"50%\" >"
                                     },
-                                    "id": 7891,
+                                    "id": 7924,
                                     "name": "Literal",
                                     "src": "1313:44:24"
                                   },
@@ -3994,18 +3994,18 @@
                                         "attributes": {
                                           "argumentTypes": [
                                             {
-                                              "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                              "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                               "typeString": "struct NFTSVG.SVGParams memory"
                                             }
                                           ],
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 7961,
+                                          "referencedDeclaration": 7994,
                                           "type": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)",
                                           "value": "generateSVGColorPartOne"
                                         },
-                                        "id": 7892,
+                                        "id": 7925,
                                         "name": "Identifier",
                                         "src": "1375:23:24"
                                       },
@@ -4014,16 +4014,16 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 7879,
+                                          "referencedDeclaration": 7912,
                                           "type": "struct NFTSVG.SVGParams memory",
                                           "value": "params"
                                         },
-                                        "id": 7893,
+                                        "id": 7926,
                                         "name": "Identifier",
                                         "src": "1399:6:24"
                                       }
                                     ],
-                                    "id": 7894,
+                                    "id": 7927,
                                     "name": "FunctionCall",
                                     "src": "1375:31:24"
                                   },
@@ -4046,18 +4046,18 @@
                                         "attributes": {
                                           "argumentTypes": [
                                             {
-                                              "typeIdentifier": "t_struct$_SVGParams_$7855_memory_ptr",
+                                              "typeIdentifier": "t_struct$_SVGParams_$7888_memory_ptr",
                                               "typeString": "struct NFTSVG.SVGParams memory"
                                             }
                                           ],
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 8018,
+                                          "referencedDeclaration": 8051,
                                           "type": "function (struct NFTSVG.SVGParams memory) pure returns (string memory)",
                                           "value": "generateSVGColorPartTwo"
                                         },
-                                        "id": 7895,
+                                        "id": 7928,
                                         "name": "Identifier",
                                         "src": "1424:23:24"
                                       },
@@ -4066,16 +4066,16 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 7879,
+                                          "referencedDeclaration": 7912,
                                           "type": "struct NFTSVG.SVGParams memory",
                                           "value": "params"
                                         },
-                                        "id": 7896,
+                                        "id": 7929,
                                         "name": "Identifier",
                                         "src": "1448:6:24"
                                       }
                                     ],
-                                    "id": 7897,
+                                    "id": 7930,
                                     "name": "FunctionCall",
                                     "src": "1424:31:24"
                                   },
@@ -4090,37 +4090,37 @@
                                       "type": "literal_string \"</linearGradient></defs>\"",
                                       "value": "</linearGradient></defs>"
                                     },
-                                    "id": 7898,
+                                    "id": 7931,
                                     "name": "Literal",
                                     "src": "1473:26:24"
                                   }
                                 ],
-                                "id": 7899,
+                                "id": 7932,
                                 "name": "FunctionCall",
                                 "src": "1134:379:24"
                               }
                             ],
-                            "id": 7900,
+                            "id": 7933,
                             "name": "FunctionCall",
                             "src": "1114:409:24"
                           }
                         ],
-                        "id": 7901,
+                        "id": 7934,
                         "name": "Assignment",
                         "src": "1108:415:24"
                       }
                     ],
-                    "id": 7902,
+                    "id": 7935,
                     "name": "ExpressionStatement",
                     "src": "1108:415:24"
                   }
                 ],
-                "id": 7903,
+                "id": 7936,
                 "name": "Block",
                 "src": "1098:432:24"
               }
             ],
-            "id": 7904,
+            "id": 7937,
             "name": "FunctionDefinition",
             "src": "1007:523:24"
           },
@@ -4133,7 +4133,7 @@
                 null
               ],
               "name": "generateSVGColorPartOne",
-              "scope": 8039,
+              "scope": 8072,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "private"
@@ -4146,7 +4146,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "params",
-                      "scope": 7961,
+                      "scope": 7994,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct NFTSVG.SVGParams",
@@ -4156,20 +4156,20 @@
                       {
                         "attributes": {
                           "name": "SVGParams",
-                          "referencedDeclaration": 7855,
+                          "referencedDeclaration": 7888,
                           "type": "struct NFTSVG.SVGParams"
                         },
-                        "id": 7905,
+                        "id": 7938,
                         "name": "UserDefinedTypeName",
                         "src": "1569:9:24"
                       }
                     ],
-                    "id": 7906,
+                    "id": 7939,
                     "name": "VariableDeclaration",
                     "src": "1569:23:24"
                   }
                 ],
-                "id": 7907,
+                "id": 7940,
                 "name": "ParameterList",
                 "src": "1568:25:24"
               },
@@ -4180,7 +4180,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "svg",
-                      "scope": 7961,
+                      "scope": 7994,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -4192,17 +4192,17 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 7908,
+                        "id": 7941,
                         "name": "ElementaryTypeName",
                         "src": "1616:6:24"
                       }
                     ],
-                    "id": 7909,
+                    "id": 7942,
                     "name": "VariableDeclaration",
                     "src": "1616:17:24"
                   }
                 ],
-                "id": 7910,
+                "id": 7943,
                 "name": "ParameterList",
                 "src": "1615:19:24"
               },
@@ -4211,7 +4211,7 @@
                   {
                     "attributes": {
                       "assignments": [
-                        7912
+                        7945
                       ]
                     },
                     "children": [
@@ -4220,7 +4220,7 @@
                           "constant": false,
                           "mutability": "mutable",
                           "name": "values0",
-                          "scope": 7960,
+                          "scope": 7993,
                           "stateVariable": false,
                           "storageLocation": "memory",
                           "type": "string",
@@ -4232,12 +4232,12 @@
                               "name": "string",
                               "type": "string"
                             },
-                            "id": 7911,
+                            "id": 7944,
                             "name": "ElementaryTypeName",
                             "src": "1645:6:24"
                           }
                         ],
-                        "id": 7912,
+                        "id": 7945,
                         "name": "VariableDeclaration",
                         "src": "1645:21:24"
                       },
@@ -4275,12 +4275,12 @@
                                 "attributes": {
                                   "name": "string"
                                 },
-                                "id": 7913,
+                                "id": 7946,
                                 "name": "ElementaryTypeName",
                                 "src": "1669:6:24"
                               }
                             ],
-                            "id": 7914,
+                            "id": 7947,
                             "name": "ElementaryTypeNameExpression",
                             "src": "1669:6:24"
                           },
@@ -4336,12 +4336,12 @@
                                       "type": "abi",
                                       "value": "abi"
                                     },
-                                    "id": 7915,
+                                    "id": 7948,
                                     "name": "Identifier",
                                     "src": "1676:3:24"
                                   }
                                 ],
-                                "id": 7916,
+                                "id": 7949,
                                 "name": "MemberAccess",
                                 "src": "1676:16:24"
                               },
@@ -4356,7 +4356,7 @@
                                   "type": "literal_string \"#\"",
                                   "value": "#"
                                 },
-                                "id": 7917,
+                                "id": 7950,
                                 "name": "Literal",
                                 "src": "1693:3:24"
                               },
@@ -4367,7 +4367,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color0",
-                                  "referencedDeclaration": 7852,
+                                  "referencedDeclaration": 7885,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -4376,16 +4376,16 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7906,
+                                      "referencedDeclaration": 7939,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7918,
+                                    "id": 7951,
                                     "name": "Identifier",
                                     "src": "1698:6:24"
                                   }
                                 ],
-                                "id": 7919,
+                                "id": 7952,
                                 "name": "MemberAccess",
                                 "src": "1698:13:24"
                               },
@@ -4400,7 +4400,7 @@
                                   "type": "literal_string \"; #\"",
                                   "value": "; #"
                                 },
-                                "id": 7920,
+                                "id": 7953,
                                 "name": "Literal",
                                 "src": "1713:5:24"
                               },
@@ -4411,7 +4411,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color1",
-                                  "referencedDeclaration": 7854,
+                                  "referencedDeclaration": 7887,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -4420,38 +4420,38 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7906,
+                                      "referencedDeclaration": 7939,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7921,
+                                    "id": 7954,
                                     "name": "Identifier",
                                     "src": "1720:6:24"
                                   }
                                 ],
-                                "id": 7922,
+                                "id": 7955,
                                 "name": "MemberAccess",
                                 "src": "1720:13:24"
                               }
                             ],
-                            "id": 7923,
+                            "id": 7956,
                             "name": "FunctionCall",
                             "src": "1676:58:24"
                           }
                         ],
-                        "id": 7924,
+                        "id": 7957,
                         "name": "FunctionCall",
                         "src": "1669:66:24"
                       }
                     ],
-                    "id": 7925,
+                    "id": 7958,
                     "name": "VariableDeclarationStatement",
                     "src": "1645:90:24"
                   },
                   {
                     "attributes": {
                       "assignments": [
-                        7927
+                        7960
                       ]
                     },
                     "children": [
@@ -4460,7 +4460,7 @@
                           "constant": false,
                           "mutability": "mutable",
                           "name": "values1",
-                          "scope": 7960,
+                          "scope": 7993,
                           "stateVariable": false,
                           "storageLocation": "memory",
                           "type": "string",
@@ -4472,12 +4472,12 @@
                               "name": "string",
                               "type": "string"
                             },
-                            "id": 7926,
+                            "id": 7959,
                             "name": "ElementaryTypeName",
                             "src": "1745:6:24"
                           }
                         ],
-                        "id": 7927,
+                        "id": 7960,
                         "name": "VariableDeclaration",
                         "src": "1745:21:24"
                       },
@@ -4515,12 +4515,12 @@
                                 "attributes": {
                                   "name": "string"
                                 },
-                                "id": 7928,
+                                "id": 7961,
                                 "name": "ElementaryTypeName",
                                 "src": "1769:6:24"
                               }
                             ],
-                            "id": 7929,
+                            "id": 7962,
                             "name": "ElementaryTypeNameExpression",
                             "src": "1769:6:24"
                           },
@@ -4576,12 +4576,12 @@
                                       "type": "abi",
                                       "value": "abi"
                                     },
-                                    "id": 7930,
+                                    "id": 7963,
                                     "name": "Identifier",
                                     "src": "1776:3:24"
                                   }
                                 ],
-                                "id": 7931,
+                                "id": 7964,
                                 "name": "MemberAccess",
                                 "src": "1776:16:24"
                               },
@@ -4596,7 +4596,7 @@
                                   "type": "literal_string \"#\"",
                                   "value": "#"
                                 },
-                                "id": 7932,
+                                "id": 7965,
                                 "name": "Literal",
                                 "src": "1793:3:24"
                               },
@@ -4607,7 +4607,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color1",
-                                  "referencedDeclaration": 7854,
+                                  "referencedDeclaration": 7887,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -4616,16 +4616,16 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7906,
+                                      "referencedDeclaration": 7939,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7933,
+                                    "id": 7966,
                                     "name": "Identifier",
                                     "src": "1798:6:24"
                                   }
                                 ],
-                                "id": 7934,
+                                "id": 7967,
                                 "name": "MemberAccess",
                                 "src": "1798:13:24"
                               },
@@ -4640,7 +4640,7 @@
                                   "type": "literal_string \"; #\"",
                                   "value": "; #"
                                 },
-                                "id": 7935,
+                                "id": 7968,
                                 "name": "Literal",
                                 "src": "1813:5:24"
                               },
@@ -4651,7 +4651,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color0",
-                                  "referencedDeclaration": 7852,
+                                  "referencedDeclaration": 7885,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -4660,31 +4660,31 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7906,
+                                      "referencedDeclaration": 7939,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7936,
+                                    "id": 7969,
                                     "name": "Identifier",
                                     "src": "1820:6:24"
                                   }
                                 ],
-                                "id": 7937,
+                                "id": 7970,
                                 "name": "MemberAccess",
                                 "src": "1820:13:24"
                               }
                             ],
-                            "id": 7938,
+                            "id": 7971,
                             "name": "FunctionCall",
                             "src": "1776:58:24"
                           }
                         ],
-                        "id": 7939,
+                        "id": 7972,
                         "name": "FunctionCall",
                         "src": "1769:66:24"
                       }
                     ],
-                    "id": 7940,
+                    "id": 7973,
                     "name": "VariableDeclarationStatement",
                     "src": "1745:90:24"
                   },
@@ -4705,11 +4705,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 7909,
+                              "referencedDeclaration": 7942,
                               "type": "string memory",
                               "value": "svg"
                             },
-                            "id": 7941,
+                            "id": 7974,
                             "name": "Identifier",
                             "src": "1845:3:24"
                           },
@@ -4747,12 +4747,12 @@
                                     "attributes": {
                                       "name": "string"
                                     },
-                                    "id": 7942,
+                                    "id": 7975,
                                     "name": "ElementaryTypeName",
                                     "src": "1851:6:24"
                                   }
                                 ],
-                                "id": 7943,
+                                "id": 7976,
                                 "name": "ElementaryTypeNameExpression",
                                 "src": "1851:6:24"
                               },
@@ -4828,12 +4828,12 @@
                                           "type": "abi",
                                           "value": "abi"
                                         },
-                                        "id": 7944,
+                                        "id": 7977,
                                         "name": "Identifier",
                                         "src": "1871:3:24"
                                       }
                                     ],
-                                    "id": 7945,
+                                    "id": 7978,
                                     "name": "MemberAccess",
                                     "src": "1871:16:24"
                                   },
@@ -4848,7 +4848,7 @@
                                       "type": "literal_string \"<stop offset=\"0%\" stop-color=\"#\"",
                                       "value": "<stop offset=\"0%\" stop-color=\"#"
                                     },
-                                    "id": 7946,
+                                    "id": 7979,
                                     "name": "Literal",
                                     "src": "1905:33:24"
                                   },
@@ -4859,7 +4859,7 @@
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "member_name": "color0",
-                                      "referencedDeclaration": 7852,
+                                      "referencedDeclaration": 7885,
                                       "type": "string memory"
                                     },
                                     "children": [
@@ -4868,16 +4868,16 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 7906,
+                                          "referencedDeclaration": 7939,
                                           "type": "struct NFTSVG.SVGParams memory",
                                           "value": "params"
                                         },
-                                        "id": 7947,
+                                        "id": 7980,
                                         "name": "Identifier",
                                         "src": "1956:6:24"
                                       }
                                     ],
-                                    "id": 7948,
+                                    "id": 7981,
                                     "name": "MemberAccess",
                                     "src": "1956:13:24"
                                   },
@@ -4892,7 +4892,7 @@
                                       "type": "literal_string \"\" >\"",
                                       "value": "\" >"
                                     },
-                                    "id": 7949,
+                                    "id": 7982,
                                     "name": "Literal",
                                     "src": "1987:5:24"
                                   },
@@ -4907,7 +4907,7 @@
                                       "type": "literal_string \"<animate id=\"a1\" attributeName=\"stop-color\" values=\"\"",
                                       "value": "<animate id=\"a1\" attributeName=\"stop-color\" values=\""
                                     },
-                                    "id": 7950,
+                                    "id": 7983,
                                     "name": "Literal",
                                     "src": "2010:54:24"
                                   },
@@ -4916,11 +4916,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7912,
+                                      "referencedDeclaration": 7945,
                                       "type": "string memory",
                                       "value": "values0"
                                     },
-                                    "id": 7951,
+                                    "id": 7984,
                                     "name": "Identifier",
                                     "src": "2082:7:24"
                                   },
@@ -4935,7 +4935,7 @@
                                       "type": "literal_string \"\" begin=\"0; a2.end\" dur=\"3s\" />\"",
                                       "value": "\" begin=\"0; a2.end\" dur=\"3s\" />"
                                     },
-                                    "id": 7952,
+                                    "id": 7985,
                                     "name": "Literal",
                                     "src": "2107:33:24"
                                   },
@@ -4950,7 +4950,7 @@
                                       "type": "literal_string \"<animate id=\"a2\" attributeName=\"stop-color\" values=\"\"",
                                       "value": "<animate id=\"a2\" attributeName=\"stop-color\" values=\""
                                     },
-                                    "id": 7953,
+                                    "id": 7986,
                                     "name": "Literal",
                                     "src": "2158:54:24"
                                   },
@@ -4959,11 +4959,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7927,
+                                      "referencedDeclaration": 7960,
                                       "type": "string memory",
                                       "value": "values1"
                                     },
-                                    "id": 7954,
+                                    "id": 7987,
                                     "name": "Identifier",
                                     "src": "2230:7:24"
                                   },
@@ -4978,37 +4978,37 @@
                                       "type": "literal_string \"\" begin=\"a1.end\" dur=\"3s\" /></stop>\"",
                                       "value": "\" begin=\"a1.end\" dur=\"3s\" /></stop>"
                                     },
-                                    "id": 7955,
+                                    "id": 7988,
                                     "name": "Literal",
                                     "src": "2255:37:24"
                                   }
                                 ],
-                                "id": 7956,
+                                "id": 7989,
                                 "name": "FunctionCall",
                                 "src": "1871:435:24"
                               }
                             ],
-                            "id": 7957,
+                            "id": 7990,
                             "name": "FunctionCall",
                             "src": "1851:465:24"
                           }
                         ],
-                        "id": 7958,
+                        "id": 7991,
                         "name": "Assignment",
                         "src": "1845:471:24"
                       }
                     ],
-                    "id": 7959,
+                    "id": 7992,
                     "name": "ExpressionStatement",
                     "src": "1845:471:24"
                   }
                 ],
-                "id": 7960,
+                "id": 7993,
                 "name": "Block",
                 "src": "1635:688:24"
               }
             ],
-            "id": 7961,
+            "id": 7994,
             "name": "FunctionDefinition",
             "src": "1536:787:24"
           },
@@ -5021,7 +5021,7 @@
                 null
               ],
               "name": "generateSVGColorPartTwo",
-              "scope": 8039,
+              "scope": 8072,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "private"
@@ -5034,7 +5034,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "params",
-                      "scope": 8018,
+                      "scope": 8051,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct NFTSVG.SVGParams",
@@ -5044,20 +5044,20 @@
                       {
                         "attributes": {
                           "name": "SVGParams",
-                          "referencedDeclaration": 7855,
+                          "referencedDeclaration": 7888,
                           "type": "struct NFTSVG.SVGParams"
                         },
-                        "id": 7962,
+                        "id": 7995,
                         "name": "UserDefinedTypeName",
                         "src": "2362:9:24"
                       }
                     ],
-                    "id": 7963,
+                    "id": 7996,
                     "name": "VariableDeclaration",
                     "src": "2362:23:24"
                   }
                 ],
-                "id": 7964,
+                "id": 7997,
                 "name": "ParameterList",
                 "src": "2361:25:24"
               },
@@ -5068,7 +5068,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "svg",
-                      "scope": 8018,
+                      "scope": 8051,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -5080,17 +5080,17 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 7965,
+                        "id": 7998,
                         "name": "ElementaryTypeName",
                         "src": "2409:6:24"
                       }
                     ],
-                    "id": 7966,
+                    "id": 7999,
                     "name": "VariableDeclaration",
                     "src": "2409:17:24"
                   }
                 ],
-                "id": 7967,
+                "id": 8000,
                 "name": "ParameterList",
                 "src": "2408:19:24"
               },
@@ -5099,7 +5099,7 @@
                   {
                     "attributes": {
                       "assignments": [
-                        7969
+                        8002
                       ]
                     },
                     "children": [
@@ -5108,7 +5108,7 @@
                           "constant": false,
                           "mutability": "mutable",
                           "name": "values0",
-                          "scope": 8017,
+                          "scope": 8050,
                           "stateVariable": false,
                           "storageLocation": "memory",
                           "type": "string",
@@ -5120,12 +5120,12 @@
                               "name": "string",
                               "type": "string"
                             },
-                            "id": 7968,
+                            "id": 8001,
                             "name": "ElementaryTypeName",
                             "src": "2438:6:24"
                           }
                         ],
-                        "id": 7969,
+                        "id": 8002,
                         "name": "VariableDeclaration",
                         "src": "2438:21:24"
                       },
@@ -5163,12 +5163,12 @@
                                 "attributes": {
                                   "name": "string"
                                 },
-                                "id": 7970,
+                                "id": 8003,
                                 "name": "ElementaryTypeName",
                                 "src": "2462:6:24"
                               }
                             ],
-                            "id": 7971,
+                            "id": 8004,
                             "name": "ElementaryTypeNameExpression",
                             "src": "2462:6:24"
                           },
@@ -5224,12 +5224,12 @@
                                       "type": "abi",
                                       "value": "abi"
                                     },
-                                    "id": 7972,
+                                    "id": 8005,
                                     "name": "Identifier",
                                     "src": "2469:3:24"
                                   }
                                 ],
-                                "id": 7973,
+                                "id": 8006,
                                 "name": "MemberAccess",
                                 "src": "2469:16:24"
                               },
@@ -5244,7 +5244,7 @@
                                   "type": "literal_string \"#\"",
                                   "value": "#"
                                 },
-                                "id": 7974,
+                                "id": 8007,
                                 "name": "Literal",
                                 "src": "2486:3:24"
                               },
@@ -5255,7 +5255,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color0",
-                                  "referencedDeclaration": 7852,
+                                  "referencedDeclaration": 7885,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -5264,16 +5264,16 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7963,
+                                      "referencedDeclaration": 7996,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7975,
+                                    "id": 8008,
                                     "name": "Identifier",
                                     "src": "2491:6:24"
                                   }
                                 ],
-                                "id": 7976,
+                                "id": 8009,
                                 "name": "MemberAccess",
                                 "src": "2491:13:24"
                               },
@@ -5288,7 +5288,7 @@
                                   "type": "literal_string \"; #\"",
                                   "value": "; #"
                                 },
-                                "id": 7977,
+                                "id": 8010,
                                 "name": "Literal",
                                 "src": "2506:5:24"
                               },
@@ -5299,7 +5299,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color1",
-                                  "referencedDeclaration": 7854,
+                                  "referencedDeclaration": 7887,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -5308,38 +5308,38 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7963,
+                                      "referencedDeclaration": 7996,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7978,
+                                    "id": 8011,
                                     "name": "Identifier",
                                     "src": "2513:6:24"
                                   }
                                 ],
-                                "id": 7979,
+                                "id": 8012,
                                 "name": "MemberAccess",
                                 "src": "2513:13:24"
                               }
                             ],
-                            "id": 7980,
+                            "id": 8013,
                             "name": "FunctionCall",
                             "src": "2469:58:24"
                           }
                         ],
-                        "id": 7981,
+                        "id": 8014,
                         "name": "FunctionCall",
                         "src": "2462:66:24"
                       }
                     ],
-                    "id": 7982,
+                    "id": 8015,
                     "name": "VariableDeclarationStatement",
                     "src": "2438:90:24"
                   },
                   {
                     "attributes": {
                       "assignments": [
-                        7984
+                        8017
                       ]
                     },
                     "children": [
@@ -5348,7 +5348,7 @@
                           "constant": false,
                           "mutability": "mutable",
                           "name": "values1",
-                          "scope": 8017,
+                          "scope": 8050,
                           "stateVariable": false,
                           "storageLocation": "memory",
                           "type": "string",
@@ -5360,12 +5360,12 @@
                               "name": "string",
                               "type": "string"
                             },
-                            "id": 7983,
+                            "id": 8016,
                             "name": "ElementaryTypeName",
                             "src": "2538:6:24"
                           }
                         ],
-                        "id": 7984,
+                        "id": 8017,
                         "name": "VariableDeclaration",
                         "src": "2538:21:24"
                       },
@@ -5403,12 +5403,12 @@
                                 "attributes": {
                                   "name": "string"
                                 },
-                                "id": 7985,
+                                "id": 8018,
                                 "name": "ElementaryTypeName",
                                 "src": "2562:6:24"
                               }
                             ],
-                            "id": 7986,
+                            "id": 8019,
                             "name": "ElementaryTypeNameExpression",
                             "src": "2562:6:24"
                           },
@@ -5464,12 +5464,12 @@
                                       "type": "abi",
                                       "value": "abi"
                                     },
-                                    "id": 7987,
+                                    "id": 8020,
                                     "name": "Identifier",
                                     "src": "2569:3:24"
                                   }
                                 ],
-                                "id": 7988,
+                                "id": 8021,
                                 "name": "MemberAccess",
                                 "src": "2569:16:24"
                               },
@@ -5484,7 +5484,7 @@
                                   "type": "literal_string \"#\"",
                                   "value": "#"
                                 },
-                                "id": 7989,
+                                "id": 8022,
                                 "name": "Literal",
                                 "src": "2586:3:24"
                               },
@@ -5495,7 +5495,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color1",
-                                  "referencedDeclaration": 7854,
+                                  "referencedDeclaration": 7887,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -5504,16 +5504,16 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7963,
+                                      "referencedDeclaration": 7996,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7990,
+                                    "id": 8023,
                                     "name": "Identifier",
                                     "src": "2591:6:24"
                                   }
                                 ],
-                                "id": 7991,
+                                "id": 8024,
                                 "name": "MemberAccess",
                                 "src": "2591:13:24"
                               },
@@ -5528,7 +5528,7 @@
                                   "type": "literal_string \"; #\"",
                                   "value": "; #"
                                 },
-                                "id": 7992,
+                                "id": 8025,
                                 "name": "Literal",
                                 "src": "2606:5:24"
                               },
@@ -5539,7 +5539,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "color0",
-                                  "referencedDeclaration": 7852,
+                                  "referencedDeclaration": 7885,
                                   "type": "string memory"
                                 },
                                 "children": [
@@ -5548,31 +5548,31 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7963,
+                                      "referencedDeclaration": 7996,
                                       "type": "struct NFTSVG.SVGParams memory",
                                       "value": "params"
                                     },
-                                    "id": 7993,
+                                    "id": 8026,
                                     "name": "Identifier",
                                     "src": "2613:6:24"
                                   }
                                 ],
-                                "id": 7994,
+                                "id": 8027,
                                 "name": "MemberAccess",
                                 "src": "2613:13:24"
                               }
                             ],
-                            "id": 7995,
+                            "id": 8028,
                             "name": "FunctionCall",
                             "src": "2569:58:24"
                           }
                         ],
-                        "id": 7996,
+                        "id": 8029,
                         "name": "FunctionCall",
                         "src": "2562:66:24"
                       }
                     ],
-                    "id": 7997,
+                    "id": 8030,
                     "name": "VariableDeclarationStatement",
                     "src": "2538:90:24"
                   },
@@ -5593,11 +5593,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 7966,
+                              "referencedDeclaration": 7999,
                               "type": "string memory",
                               "value": "svg"
                             },
-                            "id": 7998,
+                            "id": 8031,
                             "name": "Identifier",
                             "src": "2638:3:24"
                           },
@@ -5635,12 +5635,12 @@
                                     "attributes": {
                                       "name": "string"
                                     },
-                                    "id": 7999,
+                                    "id": 8032,
                                     "name": "ElementaryTypeName",
                                     "src": "2644:6:24"
                                   }
                                 ],
-                                "id": 8000,
+                                "id": 8033,
                                 "name": "ElementaryTypeNameExpression",
                                 "src": "2644:6:24"
                               },
@@ -5716,12 +5716,12 @@
                                           "type": "abi",
                                           "value": "abi"
                                         },
-                                        "id": 8001,
+                                        "id": 8034,
                                         "name": "Identifier",
                                         "src": "2664:3:24"
                                       }
                                     ],
-                                    "id": 8002,
+                                    "id": 8035,
                                     "name": "MemberAccess",
                                     "src": "2664:16:24"
                                   },
@@ -5736,7 +5736,7 @@
                                       "type": "literal_string \"<stop offset=\"100%\" stop-color=\"#\"",
                                       "value": "<stop offset=\"100%\" stop-color=\"#"
                                     },
-                                    "id": 8003,
+                                    "id": 8036,
                                     "name": "Literal",
                                     "src": "2698:35:24"
                                   },
@@ -5747,7 +5747,7 @@
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "member_name": "color1",
-                                      "referencedDeclaration": 7854,
+                                      "referencedDeclaration": 7887,
                                       "type": "string memory"
                                     },
                                     "children": [
@@ -5756,16 +5756,16 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 7963,
+                                          "referencedDeclaration": 7996,
                                           "type": "struct NFTSVG.SVGParams memory",
                                           "value": "params"
                                         },
-                                        "id": 8004,
+                                        "id": 8037,
                                         "name": "Identifier",
                                         "src": "2751:6:24"
                                       }
                                     ],
-                                    "id": 8005,
+                                    "id": 8038,
                                     "name": "MemberAccess",
                                     "src": "2751:13:24"
                                   },
@@ -5780,7 +5780,7 @@
                                       "type": "literal_string \"\" >\"",
                                       "value": "\" >"
                                     },
-                                    "id": 8006,
+                                    "id": 8039,
                                     "name": "Literal",
                                     "src": "2782:5:24"
                                   },
@@ -5795,7 +5795,7 @@
                                       "type": "literal_string \"<animate id=\"a3\" attributeName=\"stop-color\" values=\"\"",
                                       "value": "<animate id=\"a3\" attributeName=\"stop-color\" values=\""
                                     },
-                                    "id": 8007,
+                                    "id": 8040,
                                     "name": "Literal",
                                     "src": "2805:54:24"
                                   },
@@ -5804,11 +5804,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7984,
+                                      "referencedDeclaration": 8017,
                                       "type": "string memory",
                                       "value": "values1"
                                     },
-                                    "id": 8008,
+                                    "id": 8041,
                                     "name": "Identifier",
                                     "src": "2877:7:24"
                                   },
@@ -5823,7 +5823,7 @@
                                       "type": "literal_string \"\" begin=\"0; a4.end\" dur=\"3s\" />\"",
                                       "value": "\" begin=\"0; a4.end\" dur=\"3s\" />"
                                     },
-                                    "id": 8009,
+                                    "id": 8042,
                                     "name": "Literal",
                                     "src": "2902:33:24"
                                   },
@@ -5838,7 +5838,7 @@
                                       "type": "literal_string \"<animate id=\"a4\" attributeName=\"stop-color\" values=\"\"",
                                       "value": "<animate id=\"a4\" attributeName=\"stop-color\" values=\""
                                     },
-                                    "id": 8010,
+                                    "id": 8043,
                                     "name": "Literal",
                                     "src": "2953:54:24"
                                   },
@@ -5847,11 +5847,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7969,
+                                      "referencedDeclaration": 8002,
                                       "type": "string memory",
                                       "value": "values0"
                                     },
-                                    "id": 8011,
+                                    "id": 8044,
                                     "name": "Identifier",
                                     "src": "3025:7:24"
                                   },
@@ -5866,37 +5866,37 @@
                                       "type": "literal_string \"\" begin=\"a3.end\" dur=\"3s\" /></stop>\"",
                                       "value": "\" begin=\"a3.end\" dur=\"3s\" /></stop>"
                                     },
-                                    "id": 8012,
+                                    "id": 8045,
                                     "name": "Literal",
                                     "src": "3050:37:24"
                                   }
                                 ],
-                                "id": 8013,
+                                "id": 8046,
                                 "name": "FunctionCall",
                                 "src": "2664:437:24"
                               }
                             ],
-                            "id": 8014,
+                            "id": 8047,
                             "name": "FunctionCall",
                             "src": "2644:467:24"
                           }
                         ],
-                        "id": 8015,
+                        "id": 8048,
                         "name": "Assignment",
                         "src": "2638:473:24"
                       }
                     ],
-                    "id": 8016,
+                    "id": 8049,
                     "name": "ExpressionStatement",
                     "src": "2638:473:24"
                   }
                 ],
-                "id": 8017,
+                "id": 8050,
                 "name": "Block",
                 "src": "2428:690:24"
               }
             ],
-            "id": 8018,
+            "id": 8051,
             "name": "FunctionDefinition",
             "src": "2329:789:24"
           },
@@ -5909,7 +5909,7 @@
                 null
               ],
               "name": "generateSVGFigures",
-              "scope": 8039,
+              "scope": 8072,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "private"
@@ -5922,7 +5922,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "params",
-                      "scope": 8038,
+                      "scope": 8071,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct NFTSVG.SVGParams",
@@ -5932,20 +5932,20 @@
                       {
                         "attributes": {
                           "name": "SVGParams",
-                          "referencedDeclaration": 7855,
+                          "referencedDeclaration": 7888,
                           "type": "struct NFTSVG.SVGParams"
                         },
-                        "id": 8019,
+                        "id": 8052,
                         "name": "UserDefinedTypeName",
                         "src": "3733:9:24"
                       }
                     ],
-                    "id": 8020,
+                    "id": 8053,
                     "name": "VariableDeclaration",
                     "src": "3733:23:24"
                   }
                 ],
-                "id": 8021,
+                "id": 8054,
                 "name": "ParameterList",
                 "src": "3732:25:24"
               },
@@ -5956,7 +5956,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "svg",
-                      "scope": 8038,
+                      "scope": 8071,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -5968,17 +5968,17 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 8022,
+                        "id": 8055,
                         "name": "ElementaryTypeName",
                         "src": "3780:6:24"
                       }
                     ],
-                    "id": 8023,
+                    "id": 8056,
                     "name": "VariableDeclaration",
                     "src": "3780:17:24"
                   }
                 ],
-                "id": 8024,
+                "id": 8057,
                 "name": "ParameterList",
                 "src": "3779:19:24"
               },
@@ -6001,11 +6001,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 8023,
+                              "referencedDeclaration": 8056,
                               "type": "string memory",
                               "value": "svg"
                             },
-                            "id": 8025,
+                            "id": 8058,
                             "name": "Identifier",
                             "src": "3809:3:24"
                           },
@@ -6043,12 +6043,12 @@
                                     "attributes": {
                                       "name": "string"
                                     },
-                                    "id": 8026,
+                                    "id": 8059,
                                     "name": "ElementaryTypeName",
                                     "src": "3815:6:24"
                                   }
                                 ],
-                                "id": 8027,
+                                "id": 8060,
                                 "name": "ElementaryTypeNameExpression",
                                 "src": "3815:6:24"
                               },
@@ -6100,12 +6100,12 @@
                                           "type": "abi",
                                           "value": "abi"
                                         },
-                                        "id": 8028,
+                                        "id": 8061,
                                         "name": "Identifier",
                                         "src": "3835:3:24"
                                       }
                                     ],
-                                    "id": 8029,
+                                    "id": 8062,
                                     "name": "MemberAccess",
                                     "src": "3835:16:24"
                                   },
@@ -6120,7 +6120,7 @@
                                       "type": "literal_string \"<rect id=\"r\" x=\"0\" y=\"0\" rx=\"26\" ry=\"26\" width=\"512\" height=\"512\" fill=\"url(#g1)\" />\"",
                                       "value": "<rect id=\"r\" x=\"0\" y=\"0\" rx=\"26\" ry=\"26\" width=\"512\" height=\"512\" fill=\"url(#g1)\" />"
                                     },
-                                    "id": 8030,
+                                    "id": 8063,
                                     "name": "Literal",
                                     "src": "3869:86:24"
                                   },
@@ -6135,7 +6135,7 @@
                                       "type": "literal_string \"<rect x=\"16\" y=\"16\" width=\"480\" height=\"480\" rx=\"16\" ry=\"16\" fill=\"rgba(0,0,0,0)\" stroke=\"rgba(255,255,255,0.4)\"></rect>\"",
                                       "value": "<rect x=\"16\" y=\"16\" width=\"480\" height=\"480\" rx=\"16\" ry=\"16\" fill=\"rgba(0,0,0,0)\" stroke=\"rgba(255,255,255,0.4)\"></rect>"
                                     },
-                                    "id": 8031,
+                                    "id": 8064,
                                     "name": "Literal",
                                     "src": "4987:122:24"
                                   },
@@ -6150,47 +6150,47 @@
                                       "type": "literal_string \"<rect x=\"0\" y=\"0\" width=\"512\" height=\"512\" rx=\"25\" ry=\"25\" fill=\"rgba(0,0,0,0)\" stroke=\"rgba(255,255,255,0.4)\"></rect>\"",
                                       "value": "<rect x=\"0\" y=\"0\" width=\"512\" height=\"512\" rx=\"25\" ry=\"25\" fill=\"rgba(0,0,0,0)\" stroke=\"rgba(255,255,255,0.4)\"></rect>"
                                     },
-                                    "id": 8032,
+                                    "id": 8065,
                                     "name": "Literal",
                                     "src": "5127:120:24"
                                   }
                                 ],
-                                "id": 8033,
+                                "id": 8066,
                                 "name": "FunctionCall",
                                 "src": "3835:1426:24"
                               }
                             ],
-                            "id": 8034,
+                            "id": 8067,
                             "name": "FunctionCall",
                             "src": "3815:1456:24"
                           }
                         ],
-                        "id": 8035,
+                        "id": 8068,
                         "name": "Assignment",
                         "src": "3809:1462:24"
                       }
                     ],
-                    "id": 8036,
+                    "id": 8069,
                     "name": "ExpressionStatement",
                     "src": "3809:1462:24"
                   }
                 ],
-                "id": 8037,
+                "id": 8070,
                 "name": "Block",
                 "src": "3799:1479:24"
               }
             ],
-            "id": 8038,
+            "id": 8071,
             "name": "FunctionDefinition",
             "src": "3705:1573:24"
           }
         ],
-        "id": 8039,
+        "id": 8072,
         "name": "ContractDefinition",
         "src": "354:5570:24"
       }
     ],
-    "id": 8040,
+    "id": 8073,
     "name": "SourceUnit",
     "src": "87:5838:24"
   },
@@ -6200,7 +6200,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-03-02T12:44:57.531Z",
+  "updatedAt": "2022-03-02T14:01:21.977Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
