@@ -52,7 +52,7 @@ contract NFTAuction {
     //NFT token contract address
     address public _nftContractAddress;
 
-    uint32 public managerFee;//shown by 10000 not 100
+    uint32 public managerFee; //shown by 10000 not 100
     address public manager;
 
     /*╔═════════════════════════════╗
@@ -577,6 +577,10 @@ contract NFTAuction {
         priceGreaterThanZero(_minPrice)
         isRentNotStartedByOwner(_tokenId)
     {
+        require(
+            IERC721(_nftContractAddress).ownerOf(_tokenId) == msg.sender,
+            "Seller doesn't own NFT"
+        );
         nftContractAuctions[_tokenId].auctionBidPeriod = _auctionBidPeriod;
         nftContractAuctions[_tokenId]
             .bidIncreasePercentage = _bidIncreasePercentage;
@@ -643,6 +647,10 @@ contract NFTAuction {
         priceGreaterThanZero(_buyNowPrice)
         isRentNotStartedByOwner(_tokenId)
     {
+        require(
+            IERC721(_nftContractAddress).ownerOf(_tokenId) == msg.sender,
+            "Seller doesn't own NFT"
+        );
         //min price = 0
         _setupSale(
             _tokenId,
@@ -1119,6 +1127,14 @@ contract NFTAuction {
         address borrower = rentNfts[_tokenId].borrower;
         IERC721(_nftContractAddress).transferFrom(borrower, lender, _tokenId);
         emit ReturnNftToLender(lender, borrower, _tokenId);
+        _resetRent(_tokenId);
+    }
+
+    function cancelRent(uint256 _tokenId) public {
+        require(
+            msg.sender == rentNfts[_tokenId].lender,
+            "Only owner can cancel this Rent"
+        );
         _resetRent(_tokenId);
     }
 
